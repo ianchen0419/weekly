@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>確認画面</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- WCRDS --><!-- WCRDE -->
+        <meta content="ウィークリーマンション,東京,マンスリーマンション,埼玉,ウィークリーセンター,Weekly Center" name="keywords">
+        <meta content="マンスリーマンション・ウィークリーマンション（東京・埼玉）をお探しの方は【ウィークリーセンター】へ。カバン一つでの入居で、即自炊生活ができちゃうほどの設備と徹底した室内清掃で、いつでもキレイで快適！" name="description">
+        <meta content="all" name="Robots">
+        <link href="../favicon.ico" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+        <link href="../common/css/plugin.css" rel="stylesheet">
+        <link href="../common/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+        <script src="../common/js/jquery.min.js"></script>
+        <script src="../common/js/wc_script.js"></script> <link href="//weeklycenter.co.jp/" rel="index" title="ウィークリーマンションを東京・埼玉でお探しなら【ウィークリーセンター】へ！">    
+
+<link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
+<link rel="stylesheet" href="nishikawaguchi_rentalconfwebchanger.css" type="text/css" />
+<script type="text/javascript" src="../wctarget.js"></script>
+</head>
+    <body id="acp-page">
+
+        <div id="header-wrap">
+            <div id="header">
+                <header>
+                    <div id="logo">
+                        <!-- $$$CMS:共通logotext$$$ -->
+                        <p id="logo-text">ウィークリーマンションを東京・埼玉でお探しなら【ウィークリーセンター】へ！</p>
+                        <!-- $$$CME -->
+                        <h1><a href="../index.html" title="Weekly Center ウィークリーマンション　マンスリーマンション　東京／埼玉"><img src="../common/img/logo.svg" alt="Weekly Center ウィークリーマンション　マンスリーマンション　東京／埼玉" width="307" height="61">&amp;nbsp;</a></h1>
+                    </div>
+                    <!-- $$$CMS:共通header$$$ -->
+                    <div id="header-navi">
+                        <nav>
+                            <ul id="navi-sub">
+                                <li><a href="../faq/index.html">よくあるご質問</a></li>
+                                <li><a href="../company/index.html" title="会社概要">会社概要</a></li>
+                            </ul>
+                            <ul id="navi-main">
+                                <li class="nm01"><a href="../tokyo/index.html" title="東京エリア一覧">東京エリア一覧</a></li>
+                                <li class="nm02"><a href="../saitama/index.html" title="埼玉エリア一覧">埼玉エリア一覧</a></li>
+                                <li class="nm03"><a href="../reserve/index.html">ご予約</a></li>
+                                <li class="nm04"><a href="../charge/index.html" title="ご利用料金について">ご利用料金について</a></li>
+                                <li class="nm05"><a title="お問い合わせ" href="../inquiry/index.html">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- $$$CME -->
+                </header>
+            <!-- END:header -->
+            </div>
+        <!-- END:header-wrap -->
+        </div>
+
+        <div id="pagelist-wrap">
+            <ol id="pagelist">
+                <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
+                <li><!-- $$$TXS:コメント10$$$ -->ウィークリーセンター埼玉ご予約フォーム <!-- $$$TXE --></li>
+            </ol>
+        <!-- END:pagelist-wrap -->
+        </div>
+
+        <div id="title-wrap">
+            <div>
+                <h3>
+              <span class="en"><!-- $$$TXS:コメント11$$$ -->RESERVE<!-- $$$TXE --></span>
+                <span class="ja"><!-- $$$TXS:コメント12$$$ -->ご予約フォーム<!-- $$$TXE --></span></h3>
+            </div>
+        <!-- END:title-wrap -->
+        </div>
+
+        <div id="container-wrap">
+            <div id="container">
+                <main>
+                    
+                    <!-- WSC[main]S -->
+                    
+                    <div class="tit-l"><!-- $$$LOC -->
+                        <h2><!-- $$$TXS:コメント13$$$ -->ウィークリーセンター埼玉ご予約フォーム <!-- $$$TXE --></h2>
+                    </div>
+
+                    
+
+                    <div class="containerbox"><!-- $$$LOC -->
+
+                        <div class="form reservationform formconf">
+                            <p class="boxwrap1">[$msg]</p>
+                            <form method="post" action="./contact-s.php">
+                            <input type="hidden" name="FMAIL_SEND" value="1" />
+                            [$MAIN]
+                            
+                            <div class="to-submit">
+                                <input type="button" value="戻る" onClick="history.back(); return false;" class="returnbt" />
+                            [$comment_s]<input type="submit" value="上記内容で送信する" [$disabled] />[$comment_e]
+                            </div>
+                            </form>
+                        </div>                                               
+                        
+                        
+
+                    </div>
+
+                    <!-- WSC[main]E -->
+                        
+                </main>
+            <!-- END:container -->
+            </div>
+        <!-- END:container-wrap -->
+        </div>
+
+        <!-- $$$CMS:共通footer$$$ -->
+        <div id="footer-banner-wrap">
+            <div id="footer-banner">
+                <ul>
+                    
+                    <li><a href="http://km-jimusyo.com/" target="_blank"><img src="../common/img/footer-bannerimg01.gif" alt="西川口貸事務所" width="206" height="71"></a></li>
+                    <li><a href="http://www.oly-method.com/" target="_blank"><img src="../common/img/footer-bannerimg02.gif" alt="OLY工法研究会" width="206" height="71"></a></li>
+                    <li><a href="http://trunkroom-c.com/" target="_blank"><img src="../common/img/footer-bannerimg03.gif" alt="トランクROOM" width="206" height="71"></a></li>
+                    <li><a href="http://www.plusonecloset.com/" target="_blank"><img src="../common/img/footer-bannerimg04.gif" alt="Plusone Closet" width="206" height="71"></a></li>
+                    <li><a href="http://www.riverplaza.in/" target="_blank"><img src="../common/img/footer-bannerimg05.gif" alt="ウィークリーマンション八代" width="206" height="71"></a></li>
+                    <li><a href="http://www.bike-closet.com/" target="_blank"><img src="../common/img/footer-bannerimg06.gif" alt="バイククローゼット" width="206" height="71"></a></li>
+                    <li><a href="../useful/index.html"><img src="../common/img/footer-bannerimg07.gif" alt="お役立ちコンテンツ" width="206" height="71"></a></li>
+                    
+                </ul>
+            <!-- END:footer-banner -->
+            </div>
+        <!-- END:footer-banner-wrap -->
+        </div>
+        
+        <footer>
+            <div id="footer-wrap">
+                <div id="footer">
+                    <div class="cap-l3">
+                        <h3>ご予約・お問い合わせ電話番号</h3>
+                    </div>
+                    <ul>
+                        
+                        <li class="footerlist01">
+                            <p class="yoyakuc"><a href="../index.hmlt">東京予約センター</a></p>
+                            <address>03-5950-1111</address>
+                        </li>
+                        <li class="footerlist01">
+                            <p class="yoyakuc"><a href="../index.hmlt">秋葉原直通</a></p>
+                            <address>03-5820-0111</address>
+                        </li>
+                        <li class="footerlist01">
+                            <p class="yoyakuc"><a href="../index.hmlt">御茶ノ水営業所</a></p>
+                            <address>03-5807-6980</address>
+                        </li>
+                        <li class="footerlist02">
+                            <p class="yoyakuc"><a href="../index.hmlt">埼玉予約センター</a></p>
+                            <address>048-651-1111</address>
+                        </li>
+                        
+                    </ul>
+                <!-- END:footer -->
+                </div>
+            <!-- END:footer-wrap -->
+            </div>
+            <div id="copy-wrap">
+                <small>Copyright (c)<a href="../index.html">Weekly Center</a>. All rights reserved.　</small>
+            <!-- END:copy-wrap -->
+            </div>
+        </footer>
+        
+        <div id="page-side-banner">
+            <div id="pageside-top">
+                <p><a href="#">Page Top</a></p>
+            </div>
+        </div>
+        <!-- $$$CME -->
+        
+        <script src="../common/js/modernizr.js"></script>
+        <script src="../common/js/lightbox.min.js"></script>
+        <script src="../common/js/TweenMax.min.js"></script>
+        <script src="../common/js/ScrollToPlugin.min.js"></script>
+        <script src="../common/js/swiper.min.js"></script>
+        <script src="../common/js/perfect-scrollbar.min.js"></script>
+        <script src="../common/js/script.js"></script>
+    <!-- WCNAXS -->
+<script type="text/javascript" src="../wcax.js"></script>
+<script type="text/javascript">
+<!-- 
+AxWrite('400179691001','b180628122715463');
+// -->
+</script>
+<!-- WCNAXE -->
+</body>
+</html>
