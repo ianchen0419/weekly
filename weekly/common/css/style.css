@@ -3197,6 +3197,87 @@ display: block;
 	overflow:auto;
 }
 
+
+/*201809 workcapital 追加
+**/
+
+.language-text {
+    vertical-align: top;
+}
+
+.language-button:hover .drop-panel {
+  max-height: 150px;
+}
+.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#navi-sub li a:hover .arrow-down {
+    border-top-color: #04B4DF;
+    transition: all 0.6s;
+}
+
+.drop-item:hover {
+    color: #04B4DF;
+    transition: all 0.6s;
+}
+
+.drop-panel {
+    max-height: 0;
+    background-color: #fff;
+    position: absolute;
+    width: 120px;
+    padding: 0; 
+    top: 45px;
+    overflow: hidden;
+    border: 0;
+    transition: max-height 0.6s;
+    box-shadow: 1px 1px 0px #ddd;
+}
+
+.drop-item {
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.drop-item:first-child {
+  padding-top: 5px;
+}
+
+.drop-item:last-child {
+  padding-bottom: 5px;
+}
+
+#navi-main,#slide-wrap {
+    z-index: -1;
+    position: relative;
+}
+
+#mobilenavi-main ul {
+  max-height: 100%;
+}
+
+#mobilenavi-main .drop-panel{
+  display: none;
+}
+
+#mobilenavi-main .drop-item {
+  padding: 16px 8px;
+  color: #fff;
+}
+
+#mobilenavi-main .mobile-hide {
+  display: none;
+}
+
+
+
 /* END:WC Other Style
  * =================================================================================
 **/
