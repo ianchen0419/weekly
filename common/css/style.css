@@ -3284,7 +3284,7 @@ display: block;
 }
 
 #mobilenavi-main ul {
-  max-height: 100%;
+  max-height: 90%;
 }
 
 #mobilenavi-main .drop-panel{
@@ -3293,18 +3293,30 @@ display: block;
 
 #mobilenavi-main .drop-item {
   color: #fff;
+  padding: 0;
 }
 
 #mobilenavi-main .mobile-hide {
   display: none;
 }
 
-#header-wrap,#slide-wrap,#footer-banner-wrap,footer{
+#header-wrap,#slide-wrap,#footer-banner-wrap,footer {
   min-width: 1100px;
 }
 
+
 #footer-banner ul li {
  margin: 1.8%
+}
+
+@media screen and (max-width: 680px) {
+  #header-wrap,#slide-wrap,#footer-banner-wrap,footer {
+    min-width: auto;
+  }
+
+  #navi-main {
+    display: none !important;
+  }
 }
 
 
