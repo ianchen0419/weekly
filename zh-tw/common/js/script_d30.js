@@ -652,25 +652,25 @@ if (reservationform !== undefined) {
     // プラン
     if (Cookies.get('weeklycenter_plan') !== undefined) {
         if (Cookies.get('weeklycenter_plan') === 'short') {
-            planElm.getElementsByTagName('input')[0].value = 'ショート(7～29泊)';
+            planElm.getElementsByTagName('input')[0].value = '短期（7〜29晚）';
             if (confpage.length === 0) {
                 // 確認画面では出さない
-                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('ショート(7～29泊)'));
+                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('短期（7〜29晚）'));
             }
             // planElm.getElementsByTagName('input')[0].setAttribute('value', decodeURIComponent(Cookies.get('weeklycenter_plan')));
         }
         else if (Cookies.get('weeklycenter_plan') === 'middle') {
-            planElm.getElementsByTagName('input')[0].value = 'ミドル(30～89泊)';
+            planElm.getElementsByTagName('input')[0].value = '中期（30〜89晚）';
             if (confpage.length === 0) {
                 // 確認画面では出さない
-                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('ミドル(30～89泊)'));
+                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('中期（30〜89晚）'));
             }
         }
         else if (Cookies.get('weeklycenter_plan') === 'long') {
-            planElm.getElementsByTagName('input')[0].value = 'ロング(90泊～)';
+            planElm.getElementsByTagName('input')[0].value = '長期（90晚〜）';
             if (confpage.length === 0) {
                 // 確認画面では出さない
-                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('ロング(90泊～)'));
+                planElm.getElementsByTagName('dl')[0].getElementsByTagName('dd')[0].appendChild(document.createTextNode('長期（90晚〜）'));
             }
         }
         planElm.getElementsByTagName('input')[0].setAttribute('type', 'hidden');

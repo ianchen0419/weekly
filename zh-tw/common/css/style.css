@@ -2621,9 +2621,9 @@ body {
             .table-people-num td .table-form-wrap .left dl dd.red, .table-people-num td .table-form-wrap .il dl dd.red, .table-people-num td .table-form-wrap .right dl dd.red, .table-people-num td .table-form-wrap .ir dl dd.red {
               color: #D6383B; }
       .table-people-num td .table-form-wrap .left, .table-people-num td .table-form-wrap .il {
-        flex: 0 0 55%; }
+        flex: 0 0 77%; }
       .table-people-num td .table-form-wrap .right, .table-people-num td .table-form-wrap .ir {
-        flex: 0 0 45%; }
+        flex: 0 0 23%; }
         .table-people-num td .table-form-wrap .right .to-reservation a, .table-people-num td .table-form-wrap .ir .to-reservation a {
           font-size: 14px;
           font-size: 1.4rem;
@@ -3314,6 +3314,14 @@ display: block;
   height: 180px;
 }
 
+/*.form .tb-box1 tr #jquery-ui-datepicker-wrap div:first-child {
+  width: 40%;
+}
+
+.form .tb-box1 tr #jquery-ui-datepicker-wrap div:last-child {
+  width: 60%;
+}
+*/
 
 @media screen and (max-width: 680px) {
   #header-wrap,#slide-wrap,#footer-banner-wrap,footer {
