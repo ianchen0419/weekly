@@ -226,3 +226,126 @@
  * =================================================================================
 **/
 
+
+/* 201809 workcapital 追加
+ *
+ **/
+
+ .language-text {
+    vertical-align: top;
+    color: #fff;
+}
+
+.language-button:hover .drop-panel {
+  max-height: 150px;
+}
+
+#navi-main {
+  display: block !important;
+  text-align: right;
+}
+
+#navi-main li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#slide-wrap {
+  z-index: 2;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s;
+}
+#header-wrap:hover + #slide-wrap {
+  z-index: -1;
+}
+.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#navi-sub .language-button {
+  position: relative;
+}
+
+#navi-sub li a:hover .arrow-down {
+    border-top-color: #04B4DF;
+    transition: all 0.6s;
+}
+
+#navi-sub li.drop-item a:hover {
+    color: #04B4DF;
+    transition: all 0.6s;
+}
+
+#navi-sub li.drop-item a {
+    color: #000;
+}
+.drop-panel {
+    max-height: 0;
+    background-color: #fff;
+    position: absolute;
+    width: 110px;
+    padding: 0; 
+    top: 25px;
+    overflow: hidden;
+    border: 0;
+    transition: max-height 0.6s;
+    box-shadow: 1px 1px 0px #ddd;
+}
+
+.drop-item {
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.drop-item:first-child {
+  padding-top: 5px;
+}
+
+.drop-item:last-child {
+  padding-bottom: 5px;
+}
+
+#mobilenavi-main ul {
+  max-height: 90%;
+}
+
+#mobilenavi-main .drop-panel{
+  display: none;
+}
+
+#mobilenavi-main .drop-item {
+  color: #fff;
+  padding: 0;
+}
+
+#mobilenavi-main .mobile-hide {
+  display: none;
+}
+
+#header-wrap,#slide-wrap,#footer-banner-wrap,footer {
+  min-width: 1100px;
+}
+
+
+#footer-banner ul li {
+ margin: 1.8%
+}
+
+@media screen and (max-width: 680px) {
+  #header-wrap,#slide-wrap,#footer-banner-wrap,footer {
+    min-width: auto;
+  }
+
+  #navi-main {
+    display: none !important;
+  }
+}
+

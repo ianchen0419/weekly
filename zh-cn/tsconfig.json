@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es2015",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "watch": true,
+        "outFile": "./common/js/script.js"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

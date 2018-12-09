@@ -3314,15 +3314,6 @@ display: block;
   height: 180px;
 }
 
-/*.form .tb-box1 tr #jquery-ui-datepicker-wrap div:first-child {
-  width: 40%;
-}
-
-.form .tb-box1 tr #jquery-ui-datepicker-wrap div:last-child {
-  width: 60%;
-}
-*/
-
 @media screen and (max-width: 680px) {
   #header-wrap,#slide-wrap,#footer-banner-wrap,footer {
     min-width: auto;
