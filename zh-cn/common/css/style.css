@@ -1502,7 +1502,7 @@ body {
     margin: 0;
     font-weight: 700; }
     .to-bt2 p a {
-      display: inline-block;
+      display: inline;
       padding: 1% 20px 1% 1%;
       text-align: center;
       color: #262515;
