@@ -1,0 +1,27 @@
+{
+  "name": "weeklycenter",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/js-cookie": "^2.1.0",
+    "browser-sync": "^2.18.13",
+    "gsap": "^1.20.2",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "jquery": "^3.2.1",
+    "js-cookie": "^2.2.0",
+    "lightbox2": "^2.9.0",
+    "perfect-scrollbar": "^0.8.1",
+    "swiper": "^4.0.0-beta.3",
+    "typescript": "^2.6.1"
+  },
+  "keywords": [],
+  "description": ""
+}

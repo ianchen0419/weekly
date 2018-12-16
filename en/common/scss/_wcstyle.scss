@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+/* WC Edit Style
+ * =================================================================================
+**/
+
+.wcedit_400179691001{
+    #slide{
+        .swiper-container{
+            width: auto;
+            height: 400px;
+            overflow-x: auto;
+            .swiper-wrapper{
+            }
+            &.gallery-top{
+                width:376px;
+                height:400px;
+                overflow:auto;
+            }
+        }
+    }
+}
+
+/* END:WC Edit Style
+ * =================================================================================
+**/
+
+/* WC Select Style
+ * =================================================================================
+**/
+.wcselect_400179691001{
+    #navi-sub,#to-form,#navi-main ul{
+        > div{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+    }
+    #slide{
+        .swiper-container{
+            width: auto;
+            height: 400px;
+            overflow-x: auto;
+            display: block;
+            > div{
+                width: 100%;
+                .swiper-slide{
+                    display: block;
+                    float: left;
+                    width: auto;
+                }
+            }
+            .swiper-wrapper{
+            }
+        }
+    }
+    $baninums: 23.5%, 32%, 49%;
+    @each $baninumbox in $baninums {
+        $i: index($baninums, $baninumbox);
+        .banner-box#{$i}{
+            ul{
+                > div{
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+            }
+            li{
+            }
+        }
+    }
+    $inums: 100%, 49%, 32%, 23.5%, 18.4%;
+    @each $inum in $inums {
+        $i: index($inums, $inum);
+        .i#{$i}{
+            .in-wrap{
+                > div{
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+            }
+        }
+    }
+    #footerlink{
+        ul{
+            div{
+                display: flex;
+                flex-flow: row wrap;
+                width: auto;
+            }
+        }
+    }
+    .list-linkbox,.propertylist,#panlist{
+        ul{
+            > div{
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+            }
+        }
+    }
+    .propertylist{
+        ul{
+            div{
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+            }
+            li{
+                div{
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+/* END:WC Select Style
+ * =================================================================================
+**/
+
+/* WC Area Style
+ * =================================================================================
+**/
+.wcarea_400179691001{
+    li{
+        @extend .cf;
+    }
+    table{
+        width: 80%;
+        th,td{
+            padding: $b-num2;
+            width: auto;
+        }
+        th{
+            background-color: #e9e9e9;
+        }
+    }
+    .propertylist-l1,.propertylist-l2,.propertylist-l3{
+        .left{
+            flex: 0 0 70%;
+            padding-right: $b-nump2;
+            ul{}
+            .propertylist-itemlist{
+                width: auto;
+                padding: 0;
+                margin-bottom: $b-num1;
+                display: flex;
+                flex-flow: row wrap;
+                div{
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 100%;
+                }
+                li{
+                    width: auto;
+                    flex: 0 0 auto;
+                    margin-right: $b-nump1;
+                    margin-bottom: $b-num1;
+                    padding: 0;
+                    background: #F7F7F7;
+                    align-items: center;
+                    min-height: 60px;
+                    &.noimg{
+                        padding: $b-num1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END:WC Area Style
+ * =================================================================================
+**/
+
+/* WC Other Style
+ * =================================================================================
+**/
+.wc_addYoutube_span{
+    padding: $b-num3;
+    &:before{
+        content: " ";
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+        height: 250px;
+        background:url(../img/youtube.png) no-repeat center;
+    }
+}
+.wc_addGoogleMap_span{
+    padding: $b-num3;
+    &:before{
+        content: " ";
+        margin: 0;
+        display: block;
+        width: 250px;
+        height: 250px;
+        background:url(../img/googlemap.png) no-repeat top left;
+    }
+}
+.wc_facebook_span{
+    padding: $b-num3;
+    &:before{
+        content: " ";
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+        height: 250px;
+        background:url(../img/facebook.png) no-repeat top left;
+    }
+}
+
+.tableBlock{
+    width: 95%;
+}
+
+.wcedit_400179691001 .swiper-container.gallery-top{
+    width:376px;
+    height:400px;
+    overflow:auto;
+}
+
+/* END:WC Other Style
+ * =================================================================================
+**/
+
+/*201809 workcapital 追加
+**/
+
+.language-text {
+    vertical-align: top;
+    color: #fff;
+}
+
+.language-button:hover .drop-panel {
+  max-height: 150px;
+}
+
+#navi-main {
+  display: block !important;
+  text-align: right;
+}
+
+#navi-main li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#slide-wrap {
+  z-index: 2;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s;
+}
+#header-wrap:hover + #slide-wrap {
+  z-index: -1;
+}
+.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#navi-sub .language-button {
+  position: relative;
+}
+
+#navi-sub li a:hover .arrow-down {
+    border-top-color: #04B4DF;
+    transition: all 0.6s;
+}
+
+#navi-sub li.drop-item a:hover {
+    color: #04B4DF;
+    transition: all 0.6s;
+}
+
+#navi-sub li.drop-item a {
+    color: #000;
+}
+.drop-panel {
+    max-height: 0;
+    background-color: #fff;
+    position: absolute;
+    width: 110px;
+    padding: 0; 
+    top: 25px;
+    overflow: hidden;
+    border: 0;
+    transition: max-height 0.6s;
+    box-shadow: 1px 1px 0px #ddd;
+}
+
+.drop-item {
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.drop-item:first-child {
+  padding-top: 5px;
+}
+
+.drop-item:last-child {
+  padding-bottom: 5px;
+}
+
+#mobilenavi-main ul {
+  max-height: 90%;
+}
+
+#mobilenavi-main .drop-panel{
+  display: none;
+}
+
+#mobilenavi-main .drop-item {
+  color: #fff;
+  padding: 0;
+}
+
+#mobilenavi-main .mobile-hide {
+  display: none;
+}
+
+#header-wrap,#slide-wrap,#footer-banner-wrap,footer {
+  min-width: 1100px;
+}
+
+
+#footer-banner ul li {
+ margin: 1.8%
+}
+
+
+.estate-list ul li .estate-list-text {
+  height: 180px;
+}
+
+@media screen and (max-width: 680px) {
+  #header-wrap,#slide-wrap,#footer-banner-wrap,footer {
+    min-width: auto;
+  }
+
+  #navi-main {
+    display: none !important;
+  }
+
+  .estate-list ul li .estate-list-text p.bname {
+    height: 32.5px;
+    line-height: 32.5px;
+  }
+
+  p.bname span {
+    line-height: 1.3;
+    display: inline-block;
+  }
+
+  
+}
+
