@@ -727,7 +727,7 @@ body {
         font-weight: 900;
         font-size: 14px;
         font-size: 1.4rem;
-        letter-spacing: -2px; }
+        /*letter-spacing: -2px;*/ }
         #footer ul li h2 a,#footer ul li p.yoyakuc a{
           padding-right: 16px;
           background: url("../img/arrow-footer-link.svg") no-repeat 94% center;
@@ -2795,7 +2795,7 @@ body {
   padding: 0;
   margin-bottom: 16px; }
   .charge-01 ul li {
-    flex: 0 0 auto; }
+    /*flex: 0 0 auto;*/ }
     .charge-01 ul li.ico {
       margin-right: 30px; }
     .charge-01 ul li .wh {
