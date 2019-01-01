@@ -585,7 +585,7 @@ if (toFormWrap !== undefined) {
         let people_tbody = peopleBoxElm.getElementsByTagName('tbody')[0], people_tr = people_tbody.getElementsByTagName('tr');
         for (let i = 0; i < people_tr.length; i++) {
             squaresElm.push('type_tr' + i);
-            roomType = people_tr[i].getElementsByClassName('table-type-td')[0].innerText;
+            roomType = people_tr[i].getElementsByClassName('table-type-td')[0].innerText + '（'+people_tr[i].getElementsByClassName('table-type-td')[0].dataset.jp+'）';
             // roomtype set
             let p_short = people_tr[i].getElementsByClassName('td-short')[0].getElementsByClassName('to-reservation')[0].getElementsByTagName('a')[0], p_middle = people_tr[i].getElementsByClassName('td-middle')[0].getElementsByClassName('to-reservation')[0].getElementsByTagName('a')[0], p_long = people_tr[i].getElementsByClassName('td-long')[0].getElementsByClassName('to-reservation')[0].getElementsByTagName('a')[0];
             p_short.setAttribute('data-roomtype', encodeURIComponent(roomType));
