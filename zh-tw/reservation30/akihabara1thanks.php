@@ -31,7 +31,7 @@
     
 
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
-    <link rel="stylesheet" href="thankswebchanger.css" type="text/css" />
+    <link rel="stylesheet" href="akihabara1thankswebchanger.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
@@ -88,7 +88,7 @@
     <div id="pagelist-wrap">
         <ol id="pagelist">
             <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
-            <li>訂房頁面： Weekly Center 池袋</li>
+            <li>訂房頁面： Weekly Center 秋葉原 Part 1</li>
         </ol>
         <!-- END:pagelist-wrap -->
     </div>
@@ -104,15 +104,15 @@
   <div id="container-wrap">
     <div id="container">
         <main>
-
+            
             <!-- WSC[main]S -->
-            <div class="tit-l">
-                <h2>訂房頁面： Weekly Center 池袋</h2>
+            <div class="tit-l"><!-- $$$LOC -->
+                <h2>訂房頁面： Weekly Center 秋葉原 Part 1</h2>
             </div>
 
+            
 
-
-            <div class="containerbox">
+            <div class="containerbox"><!-- $$$LOC -->
 
                 <p class="boxwrap1">
                     <?php
@@ -149,7 +149,7 @@
                             $mailer->From = "ianchen0419@gmail.com";
                             // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
                             $mailer->FromName = "Weekly Center";  
-                            $mailer->Subject = "ご予約_池袋"; 
+                            $mailer->Subject = "ご予約_秋葉原 Part1"; 
                             $mailer->Body = 
                                 '■建物名'."<br>".$resident_name."<br><br>".
                                 '■利用人数'."<br>".$people_number."<br><br>".
@@ -170,7 +170,7 @@
                             if($mailer->Send()) {
                                 //成功時の記述
                                 $to_user = $people_email;
-                                $subject_user = '謝謝您的詢問：weeklycenter 池袋'; 
+                                $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part1'; 
                                 $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
                                     'Dear '.$people_name."\n".
@@ -215,12 +215,12 @@
                 
 
                 </p>
-
+                
             </div>
 
 
             <!-- WSC[main]E -->
-
+            
         </main>
         <!-- END:container -->
     </div>
@@ -281,7 +281,7 @@
 <script type="text/javascript" src="../wcax.js"></script>
 <script type="text/javascript">
     <!-- 
-    AxWrite('400179691001','ax171212222958192');
+    AxWrite('400179691001','c180124110752846');
 // -->
 </script>
 <!-- WCNAXE -->
