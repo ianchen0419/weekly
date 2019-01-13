@@ -30,7 +30,6 @@
     
 
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
-    <link rel="stylesheet" href="akihabara2thankswebchanger.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
