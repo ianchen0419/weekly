@@ -463,6 +463,7 @@ html {
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, small, address, aside, blockquote, th, td {
   /*font-family: 'Roboto',Helvetica Neue, Helvetica,YuGothic,"游ゴシック","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",Meiryo;*/
+  font-family: 'Hiragino Sans GB';
   color: #262515;
   font-size: 16px;
   font-size: 1.6rem;
