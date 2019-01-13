@@ -160,7 +160,7 @@
                                 // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
                                     'Dear '.$people_name."\n".
-                                    '谢谢您的询问。。'."\n".
+                                    '谢谢您的询问。'."\n".
                                     '----------------------------------------------------------'."\n\n\n".
                                     '■姓名'."\n".$people_name."\n\n".
                                     '■电话'."\n".$people_phone."\n\n".
