@@ -122,7 +122,7 @@ if(isset($_POST['code'])) {
                             $resident_name = htmlspecialchars($_POST['resident_name']);
                             $people_number = htmlspecialchars($_POST['people_number']);
                             $room_type = htmlspecialchars($_POST['room_type']);
-                            $room_plan = htmlspecialchars($_POST['plan']);
+                            $stay_plan = htmlspecialchars($_POST['plan']);
                             $date_from = htmlspecialchars($_POST['jquery-ui-datepicker-from']);
                             $date_to = htmlspecialchars($_POST['jquery-ui-datepicker-to']);
                             $people_type = htmlspecialchars($_POST['mailform7']);
@@ -159,7 +159,7 @@ if(isset($_POST['code'])) {
                                 '■建物名'."<br>".$resident_name."<br><br>".
                                 '■利用人数'."<br>".$people_number."<br><br>".
                                 '■部屋タイプ'."<br>".$room_type."<br><br>".
-                                '■プラン'."<br>".$room_type."<br><br>".
+                                '■プラン'."<br>".$stay_plan."<br><br>".
                                 '■利用予定期間:in'."<br>".$date_from."<br><br>".
                                 '■利用予定期間:out'."<br>".$date_to."<br><br>".
                                 '■お申し込み種別'."<br>".$people_type."<br><br>".
@@ -185,7 +185,7 @@ if(isset($_POST['code'])) {
                                     '■建築物名稱'."\n".$resident_name."\n\n".
                                     '■使用人數'."\n".$people_number."\n\n".
                                     '■房間'."\n".$room_type."\n\n".
-                                    '■方案'."\n".$room_type."\n\n".
+                                    '■方案'."\n".$stay_plan."\n\n".
                                     '■預定使用期間: check-in'."\n".$date_from."\n\n".
                                     '■預定使用期間: check-out'."\n".$date_to."\n\n".
                                     '■申請類型'."\n".$people_type_user."\n\n".
