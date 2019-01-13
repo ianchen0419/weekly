@@ -126,6 +126,12 @@ if(isset($_POST['code'])) {
                             $date_from = htmlspecialchars($_POST['jquery-ui-datepicker-from']);
                             $date_to = htmlspecialchars($_POST['jquery-ui-datepicker-to']);
                             $people_type = htmlspecialchars($_POST['mailform7']);
+                            $people_type_user='';
+                            if($people_type=='個人'){
+                                $people_type_user='個人';
+                            }else if($people_type=='法人'){
+                                $people_type_user='公司行號';
+                            }
                             $people_name = htmlspecialchars($_POST['mailform8']);
                             $people_tel = htmlspecialchars($_POST['mailform10']);
                             $people_email = htmlspecialchars($_POST['mailform11']);
@@ -182,7 +188,7 @@ if(isset($_POST['code'])) {
                                     '■方案'."\n".$room_type."\n\n".
                                     '■預定使用期間: check-in'."\n".$date_from."\n\n".
                                     '■預定使用期間: check-out'."\n".$date_to."\n\n".
-                                    '■申請類型'."\n".$people_type."\n\n".
+                                    '■申請類型'."\n".$people_type_user."\n\n".
                                     '■申請者姓名'."\n".$people_name."\n\n".
                                     '■TEL'."\n".$people_tel."\n\n".
                                     '■E-Mail'."\n".$people_email."\n\n".

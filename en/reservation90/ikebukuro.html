@@ -106,10 +106,8 @@
 				<div class="containerbox">
 
 					<div class="form reservationform">
-						<form method="post" action="/cgi-bin/contact-s.php">
-							<input type="hidden" name="SET_FILE" value="/reservation90/ikebukuroset.ini" />
-							<input type="hidden" name="WC_SHIFT" value="/" />
-
+						<form method="post" action="ikebukurothanks.php" onsubmit="code.value=new Date();">
+							<input type="hidden" name="code" id="code">
 							<!-- $$$COS -->
 							<div class="dibox">
 								<table class="tb-box1">
@@ -152,11 +150,11 @@
 											<!-- $$$TXE --></th>
 											<td id="jquery-ui-datepicker-wrap">
 												<div>
-													<!-- $$$TXS:コメント$$$ -->in<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-from" name="jquery-ui-datepicker-from" value="" class="fm-txt" /><!-- $$$TXS:コメント21$$$ -->
+													<!-- $$$TXS:コメント$$$ -->in<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-from" name="jquery-ui-datepicker-from" value="" class="fm-txt" required /><!-- $$$TXS:コメント21$$$ -->
 													<!-- $$$TXE --><p class="datepicker-from-text"></p>
 												</div>
 												<div>
-													<!-- $$$TXS:コメント$$$ -->out<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-to" name="jquery-ui-datepicker-to" value="" class="fm-txt" /><!-- $$$TXS:コメント22$$$ -->till 10am
+													<!-- $$$TXS:コメント$$$ -->out<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-to" name="jquery-ui-datepicker-to" value="" class="fm-txt" required /><!-- $$$TXS:コメント22$$$ -->till 10am
 													<!-- $$$TXE --><p class="datepicker-to-text"></p>
 												</div>
 											</td>
@@ -168,13 +166,13 @@
 											</th>
 											<td>
 
-												<label><!-- $$$LOC --><input type="radio" name="mailform7" value="Individual" class="fm-rad" /><!-- $$$CDS -->
+												<label><!-- $$$LOC --><input type="radio" name="mailform7" value="個人" class="fm-rad" required /><!-- $$$CDS -->
 													<!-- $$$TXS:コメント$$$ -->
 													Individual
 													<!-- $$$TXE -->
 													<!-- $$$CDE --></label><!-- $$$TAX -->
 
-													<label><input type="radio" name="mailform7"  value="法人" class="fm-rad" />Corporation</label><!-- $$$TAX --><!-- $$$TAE -->
+													<label><input type="radio" name="mailform7"  value="法人" class="fm-rad" required />Corporation</label><!-- $$$TAX --><!-- $$$TAE -->
 												</td>
 											</tr>
 											<tr>
@@ -183,7 +181,7 @@
 													<!-- $$$TXE -->
 												</th>
 												<td>
-													<input type="text" name="mailform8" size="30" value="" class="fm-txt" >
+													<input type="text" name="mailform8" size="30" value="" class="fm-txt" required >
 												</td>
 											</tr>
 											<tr>
@@ -192,7 +190,7 @@
 													<!-- $$$TXE -->
 												</th>
 												<td>
-													<input type="text" name="mailform10" size="30" value="" class="fm-txt" >
+													<input type="tel" name="mailform10" size="30" value="" class="fm-txt" required >
 												</td>
 											</tr>
 											<tr>
@@ -201,7 +199,16 @@
 													<!-- $$$TXE -->
 												</th>
 												<td>
-													<input type="text" name="mailform11" size="30" class="fm-txt">
+													<input type="email" name="mailform11" size="30" class="fm-txt" required>
+												</td>
+											</tr>
+											<tr>
+												<th><!-- $$$TXS:コメント28$$$ -->
+													<span class="red">※</span>Country
+													<!-- $$$TXE -->
+												</th>
+												<td>
+													<input type="text" name="country" id="country" size="30" value="" class="fm-txt" required >
 												</td>
 											</tr>
 											<tr class="form-add"><!-- $$$LOC -->
@@ -210,7 +217,7 @@
 													<!-- $$$TXE -->
 												</th>
 												<td>
-													<input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" >
+													<input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" required >
 												</td>
 											</tr>
 											<tr>
@@ -225,7 +232,7 @@
 														Before making reservations, please be sure to read the "<a href="../terms/index.html">Guide to using short stay apartment</a>"<br>
 														and agree to the contents.
 													</p>
-													<label><!-- $$$LOC --><input type="checkbox" name="mailform18[0]" value="内容を確認の上同意" class="fm-chk" /><!-- $$$CDS --><!-- $$$TXS:コメント$$$ -->Confirmed contents<!-- $$$TXE --><!-- $$$CDE --></label>
+													<label><!-- $$$LOC --><input type="checkbox" name="mailform18[0]" value="内容を確認の上同意" class="fm-chk" required /><!-- $$$CDS --><!-- $$$TXS:コメント$$$ -->Confirmed contents<!-- $$$TXE --><!-- $$$CDE --></label>
 												</td>
 											</tr>
 											<!-- $$$TAE -->
@@ -234,7 +241,7 @@
 									<!-- $$$COE -->
 
 									<div class="to-submit">
-										<input type="submit" value="Confirm">
+										<input type="submit" value="Confirm" name="your_submit">
 									</div>
 
 								</form>

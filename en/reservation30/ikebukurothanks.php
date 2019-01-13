@@ -1,3 +1,14 @@
+<?php 
+    session_start(); 
+    if(isset($_POST['code'])) {  
+        if($_POST['code'] == $_SESSION['code']){
+            // データは再送信されようとします
+            header ('Location: https://weeklycenter.co.jp');
+            return;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -103,7 +114,113 @@
 
             <div class="containerbox"><!-- $$$LOC -->
 
-                <p class="boxwrap1">Thank you for your inquiry.</p>
+                <p class="boxwrap1">
+                    <?php
+                        if (!empty($_POST['your_submit'])){
+                            require_once "../phpmailer/class.phpmailer.php";
+                            $_SESSION['code']=$_POST['code'];
+                            // 文字の処理
+                            $resident_name = htmlspecialchars($_POST['resident_name']);
+                            $people_number = htmlspecialchars($_POST['people_number']);
+                            $room_type = htmlspecialchars($_POST['room_type']);
+                            $room_plan = htmlspecialchars($_POST['plan']);
+                            $date_from = htmlspecialchars($_POST['jquery-ui-datepicker-from']);
+                            $date_to = htmlspecialchars($_POST['jquery-ui-datepicker-to']);
+                            $people_type = htmlspecialchars($_POST['mailform7']);
+                            $people_type_user='';
+                            if($people_type=='個人'){
+                                $people_type_user='Individual';
+                            }else if($people_type=='法人'){
+                                $people_type_user='Corporation';
+                            }
+                            $people_name = htmlspecialchars($_POST['mailform8']);
+                            $people_tel = htmlspecialchars($_POST['mailform10']);
+                            $people_email = htmlspecialchars($_POST['mailform11']);
+                            $people_country = htmlspecialchars($_POST['country']);
+                            $people_address = htmlspecialchars($_POST['localaddress1']);
+                            $people_comment = htmlspecialchars($_POST['mailform12']);
+
+                            $mailer = new PHPMailer();
+                            $mailer->SMTPSecure = "ssl";
+                            $mailer->Host = "smtp.gmail.com";
+                            $mailer->Port = 465;
+                            $mailer->CharSet = "utf-8";    
+                            $mailer->Username = "inquiry.workcapital@gmail.com";       
+                            $mailer->Password = "contactwc180623@"; 
+                            $mailer->IsSMTP();
+                            $mailer->SMTPAuth = true;
+                            $mailer->SMTPDebug  = 1;
+                            $mailer->Encoding = "base64";
+                            $mailer->IsHTML(true); 
+                            $mailer->From = "ianchen0419@gmail.com";
+                            // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
+                            $mailer->FromName = "Weekly Center";  
+                            $mailer->Subject = "ご予約_池袋"; 
+                            $mailer->Body = 
+                                '■建物名'."<br>".$resident_name."<br><br>".
+                                '■利用人数'."<br>".$people_number."<br><br>".
+                                '■部屋タイプ'."<br>".$room_type."<br><br>".
+                                '■プラン'."<br>".$room_type."<br><br>".
+                                '■利用予定期間:in'."<br>".$date_from."<br><br>".
+                                '■利用予定期間:out'."<br>".$date_to."<br><br>".
+                                '■お申し込み種別'."<br>".$people_type."<br><br>".
+                                '■お申し込み者氏名'."<br>".$people_name."<br><br>".
+                                '■電話番号'."<br>".$people_tel."<br><br>".
+                                '■メールアドレス'."<br>".$people_email."<br><br>".
+                                '■国籍'."<br>".$people_country."<br><br>".
+                                '■住所'."<br>".$people_address."<br><br>".
+                                '■通信欄その他ご希望・お問合せ'."<br>".nl2br($people_comment)."<br><br>";
+                            $mailer->AddAddress("ianchen0419@gmail.com"); 
+                            // $mailer->AddAddress("form_ikebukuro@weeklycenter.co.jp"); 
+                            
+                            if($mailer->Send()) {
+                                //成功時の記述
+                                $to_user = $people_email;
+                                $subject_user = 'Thank you for your inquiry.:weeklycenter Ikebukuro'; 
+                                $headers_user = "From: ianchen0419@gmail.com";
+                                // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
+                                $content_user = 
+                                    'Dear '.$people_name."\n".
+                                    'Thank you for your inquiry.'."\n".
+                                    '----------------------------------------------------------'."\n\n\n".
+                                    '■Apartment name'."\n".$resident_name."\n\n".
+                                    '■Number of people'."\n".$people_number."\n\n".
+                                    '■Room Type'."\n".$room_type."\n\n".
+                                    '■Style'."\n".$room_type."\n\n".
+                                    '■Scheduled use period: check-in'."\n".$date_from."\n\n".
+                                    '■Scheduled use period: check-out'."\n".$date_to."\n\n".
+                                    '■Application type'."\n".$people_type_user."\n\n".
+                                    '■Applicant\'s name'."\n".$people_name."\n\n".
+                                    '■TEL'."\n".$people_tel."\n\n".
+                                    '■E-Mail'."\n".$people_email."\n\n".
+                                    '■Country'."\n".$people_country."\n\n".
+                                    '■Address'."\n".$people_address."\n\n".
+                                    '■Remarks'."\n".$people_comment."\n\n\n\n".
+                                    '----------------------------------------------------------'."\n\n".
+                                    '================================='."\n".
+                                    'Weekly Center Co., Ltd.'."\n".
+                                    '604, 2 Kandakitanorimonocho, Chiyoda-ku, Tokyo, 101-0036, JAPAN'."\n\n".
+                                    '■Tokyo Reservation Center TEL.03-5950-1111'."\n".
+                                    '■Akihabara direct line TEL.03-5820-0111'."\n".
+                                    '■Ochanomizu Sales Office TEL.03-5807-6980'."\n".
+                                    '■Saitama Reservation Center TEL.048-651-1111'."\n".
+                                    '================================='."\n\n";
+
+                                mail($to_user, $subject_user, $content_user, $headers_user);
+                                print_r('Thank you for your inquiry.');
+                            } else {
+                                //失敗時の記述
+                                print_r('送信失敗しました');
+                            }
+                        }
+                                
+
+                    ?>
+
+
+
+                
+                </p>
                 
             </div>
 

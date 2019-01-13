@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="../common/js/jquery.min.js"></script>
     <script src="../common/js/wc_script.js"></script>
-    <link href="//weeklycenter.co.jp/" rel="index" title="東京・埼玉短租公寓請檢索【Weekly Center】">
+    <link href="//weeklycenter.co.jp/" rel="index" title="东京・埼玉短租公寓请检索【Weekly Center】">
     
 
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
@@ -41,16 +41,16 @@
             <header>
                 <div id="logo">
                     <!-- $$$CMS:共通logotext$$$ -->
-                    <p id="logo-text">東京・埼玉短租公寓請檢索【Weekly Center】</p>
+                    <p id="logo-text">东京・埼玉短租公寓请检索【Weekly Center】</p>
                     <!-- $$$CME -->
-                    <h1><a href="/zh-tw/index.html"><img src="../common/img/logo_en.svg" alt="ウィークリーセンター" width="307" height="61">&nbsp;</a></h1>
+                    <h1><a href="/zh-cn/index.html"><img src="../common/img/logo_en.svg" alt="ウィークリーセンター" width="307" height="61">&nbsp;</a></h1>
                 </div>
                 <!-- $$$CMS:共通header$$$ -->
                 <div id="header-navi">
                     <nav>
                         <ul id="navi-sub">
-                            <li><a href="../faq/index.html">常見問題</a></li>
-                            <li><a href="../company/index.html" title="公司介紹">公司介紹</a></li>
+                            <li><a href="../faq/index.html">常见问题</a></li>
+                            <li><a href="../company/index.html" title="公司介绍">公司介绍</a></li>
                             <li class="mobile-hide">
                                 <div title="language" class="language-button">
                                     <span class="language-text">languages</span>
@@ -63,18 +63,18 @@
                                             <a href="../../en/index.html">English</a>
                                         </li>
                                         <li class="drop-item">
-                                            <a href="../../zh-cn/index.html">简体中文</a>
+                                            <a href="../../zh-tw/index.html">繁體中文</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                         <ul id="navi-main">
-                            <li class="nm01"><a href="../tokyo/index.html" title="東京地區一覧表">東京地區一覧表</a></li>
-                            <li class="nm02"><a href="../saitama/index.html" title="埼玉地區一覧表">埼玉地區一覧表</a></li>
-                            <li class="nm03"><a href="../reserve/index.html" title="訂房">訂房</a></li>
-                            <li class="nm04"><a href="../charge/index.html" title="費用說明">費用說明</a></li>
-                            <li class="nm05"><a title="聯絡我們" href="../inquiry/index.html">聯絡我們</a></li>
+                            <li class="nm01"><a href="../tokyo/index.html" title="东京地区一覧表">东京地区一覧表</a></li>
+                            <li class="nm02"><a href="../saitama/index.html" title="埼玉地区一覧表">埼玉地区一覧表</a></li>
+                            <li class="nm03"><a href="../reserve/index.html" title="订房">订房</a></li>
+                            <li class="nm04"><a href="../charge/index.html" title="费用说明">费用说明</a></li>
+                            <li class="nm05"><a title="联络我们" href="../inquiry/index.html">联络我们</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -88,7 +88,7 @@
     <div id="pagelist-wrap">
         <ol id="pagelist">
             <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
-            <li>訂房頁面： Weekly Center 秋葉原 Part 2</li>
+            <li>订房页面： Weekly Center 秋叶原 Part 2</li>
         </ol>
         <!-- END:pagelist-wrap -->
     </div>
@@ -96,7 +96,7 @@
     <div id="title-wrap">
         <div><h3>
           <span class="en"><!-- $$$TXS:コメント11$$$ -->RESERVE<!-- $$$TXE --></span>
-          <span class="ja">訂房頁面</span></h3>
+          <span class="ja">订房页面</span></h3>
       </div>
       <!-- END:title-wrap -->
   </div>
@@ -107,7 +107,7 @@
 
             <!-- WSC[main]S -->
             <div class="tit-l">
-                <h2>訂房頁面： Weekly Center 秋葉原 Part 2</h2>
+                <h2>订房页面： Weekly Center 秋叶原 Part 2</h2>
             </div>
 
 
@@ -129,9 +129,9 @@
                             $people_type = htmlspecialchars($_POST['mailform7']);
                             $people_type_user='';
                             if($people_type=='個人'){
-                                $people_type_user='個人';
+                                $people_type_user='个人';
                             }else if($people_type=='法人'){
-                                $people_type_user='公司行號';
+                                $people_type_user='公司行号';
                             }
                             $people_name = htmlspecialchars($_POST['mailform8']);
                             $people_tel = htmlspecialchars($_POST['mailform10']);
@@ -176,39 +176,39 @@
                             if($mailer->Send()) {
                                 //成功時の記述
                                 $to_user = $people_email;
-                                $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part2'; 
+                                $subject_user = '谢谢您的询问：weeklycenter 秋叶原 Part2'; 
                                 $headers_user = "From: ianchen0419@gmail.com";
                                 // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
                                     'Dear '.$people_name."\n".
-                                    '謝謝您的詢問。'."\n".
+                                    '谢谢您的询问。'."\n".
                                     '----------------------------------------------------------'."\n\n\n".
-                                    '■建築物名稱'."\n".$resident_name."\n\n".
-                                    '■使用人數'."\n".$people_number."\n\n".
-                                    '■房間'."\n".$room_type."\n\n".
+                                    '■建筑物名称'."\n".$resident_name."\n\n".
+                                    '■使用人数'."\n".$people_number."\n\n".
+                                    '■房间'."\n".$room_type."\n\n".
                                     '■方案'."\n".$room_type."\n\n".
-                                    '■預定使用期間: check-in'."\n".$date_from."\n\n".
-                                    '■預定使用期間: check-out'."\n".$date_to."\n\n".
-                                    '■申請類型'."\n".$people_type_user."\n\n".
-                                    '■申請者姓名'."\n".$people_name."\n\n".
+                                    '■预定使用期间: check-in'."\n".$date_from."\n\n".
+                                    '■预定使用期间: check-out'."\n".$date_to."\n\n".
+                                    '■申请类型'."\n".$people_type_user."\n\n".
+                                    '■申请者姓名'."\n".$people_name."\n\n".
                                     '■TEL'."\n".$people_tel."\n\n".
                                     '■E-Mail'."\n".$people_email."\n\n".
-                                    '■國籍'."\n".$people_country."\n\n".
+                                    '■国籍'."\n".$people_country."\n\n".
                                     '■住址'."\n".$people_address."\n\n".
-                                    '■聯絡欄 其他要求/諮詢'."\n".$people_comment."\n\n\n\n".
+                                    '■联络栏 其他要求/谘询'."\n".$people_comment."\n\n\n\n".
                                     '----------------------------------------------------------'."\n\n".
                                     '================================='."\n".
                                     '株式会社Weekly Center'."\n".
                                     '〒101-0036'."\n".
-                                    '東京都千代田區神田北乗物町2番地 神田乗物町604'."\n\n".
-                                    '■東京訂房中心 TEL.03-5950-1111'."\n".
-                                    '■秋葉原直通 TEL.03-5820-0111'."\n".
-                                    '■御茶水營業所 TEL.03-5807-6980'."\n".
-                                    '■埼玉訂房中心 TEL.048-651-1111'."\n".
+                                    '东京都千代田区神田北乗物町2番地 神田乗物町604'."\n\n".
+                                    '■东京订房中心 TEL.03-5950-1111'."\n".
+                                    '■秋叶原直通 TEL.03-5820-0111'."\n".
+                                    '■御茶水营业所 TEL.03-5807-6980'."\n".
+                                    '■埼玉订房中心 TEL.048-651-1111'."\n".
                                     '================================='."\n\n";
 
                                 mail($to_user, $subject_user, $content_user, $headers_user);
-                                print_r('謝謝您的詢問');
+                                print_r('谢谢您的询问');
                             } else {
                                 //失敗時の記述
                                 print_r('送信失敗しました');
@@ -221,6 +221,7 @@
 
                 
 
+                
                 </p>
 
             </div>
@@ -240,23 +241,23 @@
     <div id="footer-wrap">
         <div id="footer">
             <div class="cap-l3">
-                <h3>訂房電話</h3>
+                <h3>订房电话</h3>
             </div>
             <ul>
                 <li class="footerlist01">
-                    <p class="yoyakuc"><a href="../inquiry/index.html">東京訂房中心</a></p>
+                    <p class="yoyakuc"><a href="../inquiry/index.html">东京订房中心</a></p>
                     <address>03-5950-1111</address>
                 </li>
                 <li class="footerlist01">
-                    <p class="yoyakuc"><a href="../inquiry/index.html">秋葉原直通</a></p>
+                    <p class="yoyakuc"><a href="../inquiry/index.html">秋叶原直通</a></p>
                     <address>03-5820-0111</address>
                 </li>
                 <li class="footerlist01">
-                    <p class="yoyakuc"><a href="../inquiry/index.html">御茶水營業所</a></p>
+                    <p class="yoyakuc"><a href="../inquiry/index.html">御茶水营业所</a></p>
                     <address>03-5807-6980</address>
                 </li>
                 <li class="footerlist02">
-                    <p class="yoyakuc"><a href="../inquiry/index.html">埼玉訂房中心</a></p>
+                    <p class="yoyakuc"><a href="../inquiry/index.html">埼玉订房中心</a></p>
                     <address>048-651-1111</address>
                 </li>
             </ul>
