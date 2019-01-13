@@ -21,7 +21,6 @@
     <!-- $$$CON:contact-s.php -->
     <!-- $$$CPP:LOC$$$ -->
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
-    <link rel="stylesheet" href="indexwebchanger.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
@@ -102,10 +101,8 @@
 
                 <p class="boxwrap1">請填寫以下必須項目，確認內容後送出。<br>【注意】空房情報及入住相關事項，無法迅速回答。</p>
                 <div class="form reservationform">
-                    <form method="post" action="/cgi-bin/contact-s.php">
-                        <input type="hidden" name="SET_FILE" value="/inquiryakihabara1/indexset.ini" />
-                        <input type="hidden" name="WC_SHIFT" value="/" />
-
+                   <form method="post" action="thanks.php" onsubmit="code.value=new Date();"  >
+                        <input type="hidden" name="code" id="code">
                         <!-- $$$COS -->
                         <div class="dibox">
                             <table class="tb-box1">
@@ -113,22 +110,22 @@
                                 <tr>
                                     <th><!-- $$$TXS:コメント16$$$ --><span class="red">※</span>姓名</th>
                                     <td>
-                                        <input type="text" name="mailform1" size="30" value="" class="fm-txt" >
+                                        <input type="text" name="mailform1" size="30" value="" class="fm-txt" required >
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><!-- $$$TXS:コメント18$$$ --><span class="red">※</span>電話</th>
                                     <td>
-                                        <input type="text" name="mailform3" size="30" value="" class="fm-txt" >
+                                        <input type="tel" name="mailform3" size="30" value="" class="fm-txt" required >
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><!-- $$$TXS:コメント19$$$ --><span class="red">※</span>E-mail</th>
-                                    <td><input type="text" name="mailform4" size="30" class="fm-txt"></td>
+                                    <td><input type="email" name="mailform4" size="30" class="fm-txt" required></td>
                                 </tr>
                                 <tr class="form-add"><!-- $$$LOC -->
                                     <th><!-- $$$TXS:コメント20$$$ --><span class="red">※</span>住址</th>
-                                    <td><input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" ></td>
+                                    <td><input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" required ></td>
                                 </tr>
                                 <tr>
                                     <th>詢問內容及意見</th>
@@ -142,7 +139,7 @@
                       <!-- $$$COE -->
 
                       <div class="to-submit">
-                        <input type="submit" value="確　認">
+                        <input type="submit" value="確　認" name="your_submit">
                     </div>
 
                 </form>

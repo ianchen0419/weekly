@@ -29,6 +29,9 @@
     <script src="../common/js/jquery.min.js"></script>
     <script src="../common/js/wc_script.js"></script>
     <link href="//weeklycenter.co.jp/" rel="index" title="東京・埼玉短租公寓請檢索【Weekly Center】">
+    
+
+    <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
@@ -85,7 +88,7 @@
     <div id="pagelist-wrap">
         <ol id="pagelist">
             <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
-            <li>與我們聯絡：Weekly Center 池袋</li>
+            <li>與我們聯絡：Weekly Center 秋葉原 Part 2</li>
         </ol>
         <!-- END:pagelist-wrap -->
     </div>
@@ -101,13 +104,13 @@
   <div id="container-wrap">
     <div id="container">
         <main>
-            
+
             <!-- WSC[main]S -->
             <div class="tit-l">
-                <h2>與我們聯絡：Weekly Center 池袋</h2>
+                <h2>與我們聯絡：Weekly Center 秋葉原 Part 2</h2>
             </div>
 
-            
+
 
             <div class="containerbox">
 
@@ -139,7 +142,7 @@
                             $mailer->From = "ianchen0419@gmail.com";
                             // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
                             $mailer->FromName = "Weekly Center";  
-                            $mailer->Subject = "お問合せ_池袋"; 
+                            $mailer->Subject = "お問合せ_秋葉原 Part2"; 
                             $mailer->Body = 
                                 '■お名前'."<br>".$people_name."<br><br>".
                                 '■電話番号'."<br>".$people_phone."<br><br>".
@@ -152,7 +155,7 @@
                             if($mailer->Send()) {
                                 //成功時の記述
                                 $to_user = $people_email;
-                                $subject_user = '謝謝您的詢問：weeklycenter 池袋'; 
+                                $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part2'; 
                                 $headers_user = "From: ianchen0419@gmail.com";
                                 // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
@@ -191,11 +194,11 @@
 
                 </p>
 
-                
+
             </div>
 
             <!-- WSC[main]E -->
-            
+
         </main>
         <!-- END:container -->
     </div>
@@ -259,7 +262,7 @@
 <script type="text/javascript" src="../wcax.js"></script>
 <script type="text/javascript">
     <!-- 
-    AxWrite('400179691001','ax171212222956027');
+    AxWrite('400179691001','ax171212222955607');
 // -->
 </script>
 <!-- WCNAXE -->

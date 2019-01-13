@@ -21,7 +21,6 @@
     <!-- $$$CON:contact-s.php -->
     <!-- $$$CPP:LOC$$$ -->
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
-    <link rel="stylesheet" href="indexwebchanger.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
@@ -105,9 +104,8 @@
 
                 <p class="boxwrap1">Please click the content confirmation button after filling in the mandatory items and other items.<br>【Note】We can not answer questions about vacancy information and residency.</p>
                 <div class="form reservationform">
-                    <form method="post" action="/cgi-bin/contact-s.php">
-                        <input type="hidden" name="SET_FILE" value="/inquiryakihabara2/indexset.ini" />
-                        <input type="hidden" name="WC_SHIFT" value="/" />
+                    <form method="post" action="thanks.php" onsubmit="code.value=new Date();"  >
+                        <input type="hidden" name="code" id="code">
 
                         <!-- $$$COS -->
                         <div class="dibox">
@@ -116,23 +114,23 @@
                                 <tr>
                                     <th><!-- $$$TXS:コメント16$$$ --><span class="red">※</span>Name<!-- $$$TXE --></th>
                                     <td>
-                                        <input type="text" name="mailform1" size="30" value="" class="fm-txt" >
+                                        <input type="text" name="mailform1" size="30" value="" class="fm-txt" required >
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><!-- $$$TXS:コメント18$$$ --><span class="red">※</span>Telephone<!-- $$$TXE --></th>
                                     <td>
-                                        <input type="text" name="mailform3" size="30" value="" class="fm-txt" >
+                                        <input type="tel" name="mailform3" size="30" value="" class="fm-txt" required >
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><!-- $$$TXS:コメント19$$$ --><span class="red">※</span>E-mail<!-- $$$TXE --></th>
-                                    <td><input type="text" name="mailform4" size="30" class="fm-txt"></td>
+                                    <td><input type="email" name="mailform4" size="30" class="fm-txt" required></td>
                                 </tr>
                                 <tr class="form-add"><!-- $$$LOC -->
                                     <th><!-- $$$TXS:コメント20$$$ --><span class="red">※</span>Address<!-- $$$TXE --></th>
                                     <td>
-                                        <input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" >
+                                        <input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" required >
                                     </td>
                                 </tr>
                                 <tr>
@@ -147,7 +145,7 @@
                       <!-- $$$COE -->
 
                       <div class="to-submit">
-                        <input type="submit" value="Confirm">
+                        <input type="submit" value="Confirm" name="your_submit">
                     </div>
 
                 </form>

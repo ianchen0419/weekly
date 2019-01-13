@@ -29,55 +29,53 @@
     <script src="../common/js/jquery.min.js"></script>
     <script src="../common/js/wc_script.js"></script>
     <link href="//weeklycenter.co.jp/" rel="index" title="東京・埼玉短租公寓請檢索【Weekly Center】">
+    <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
 
     <div id="header-wrap">
         <div id="header">
-            <header>
-                <div id="logo">
-                    <!-- $$$CMS:共通logotext$$$ -->
-                    <p id="logo-text">東京・埼玉短租公寓請檢索【Weekly Center】</p>
-                    <!-- $$$CME -->
-                    <h1><a href="/zh-tw/index.html"><img src="../common/img/logo_en.svg" alt="ウィークリーセンター" width="307" height="61">&nbsp;</a></h1>
-                </div>
-                <!-- $$$CMS:共通header$$$ -->
-                <div id="header-navi">
-                    <nav>
-                        <ul id="navi-sub">
-                            <li><a href="../faq/index.html">常見問題</a></li>
-                            <li><a href="../company/index.html" title="公司介紹">公司介紹</a></li>
-                            <li class="mobile-hide">
-                                <div title="language" class="language-button">
-                                    <span class="language-text">languages</span>
-                                    <span class="arrow-down"></span>
-                                    <ul class="drop-panel">
-                                        <li class="drop-item">
-                                            <a href="../../index.html">日本語</a>
-                                        </li>
-                                        <li class="drop-item">
-                                            <a href="../../en/index.html">English</a>
-                                        </li>
-                                        <li class="drop-item">
-                                            <a href="../../zh-cn/index.html">简体中文</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul id="navi-main">
-                            <li class="nm01"><a href="../tokyo/index.html" title="東京地區一覧表">東京地區一覧表</a></li>
-                            <li class="nm02"><a href="../saitama/index.html" title="埼玉地區一覧表">埼玉地區一覧表</a></li>
-                            <li class="nm03"><a href="../reserve/index.html" title="訂房">訂房</a></li>
-                            <li class="nm04"><a href="../charge/index.html" title="費用說明">費用說明</a></li>
-                            <li class="nm05"><a title="聯絡我們" href="../inquiry/index.html">聯絡我們</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="logo">
+                <!-- $$$CMS:共通logotext$$$ -->
+                <p id="logo-text">東京・埼玉短租公寓請檢索【Weekly Center】</p>
                 <!-- $$$CME -->
-            </header>
-            <!-- END:header -->
+                <h1><a href="/zh-tw/index.html"><img src="../common/img/logo_en.svg" alt="ウィークリーセンター" width="307" height="61">&nbsp;</a></h1>
+            </div>
+            <!-- $$$CMS:共通header$$$ -->
+            <div id="header-navi">
+                <nav>
+                    <ul id="navi-sub">
+                        <li><a href="../faq/index.html">常見問題</a></li>
+                        <li><a href="../company/index.html" title="公司介紹">公司介紹</a></li>
+                        <li class="mobile-hide">
+                            <div title="language" class="language-button">
+                                <span class="language-text">languages</span>
+                                <span class="arrow-down"></span>
+                                <ul class="drop-panel">
+                                    <li class="drop-item">
+                                        <a href="../../index.html">日本語</a>
+                                    </li>
+                                    <li class="drop-item">
+                                        <a href="../../en/index.html">English</a>
+                                    </li>
+                                    <li class="drop-item">
+                                        <a href="../../zh-cn/index.html">简体中文</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="navi-main">
+                        <li class="nm01"><a href="../tokyo/index.html" title="東京地區一覧表">東京地區一覧表</a></li>
+                        <li class="nm02"><a href="../saitama/index.html" title="埼玉地區一覧表">埼玉地區一覧表</a></li>
+                        <li class="nm03"><a href="../reserve/index.html" title="訂房">訂房</a></li>
+                        <li class="nm04"><a href="../charge/index.html" title="費用說明">費用說明</a></li>
+                        <li class="nm05"><a title="聯絡我們" href="../inquiry/index.html">聯絡我們</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- $$$CME -->
         </div>
         <!-- END:header-wrap -->
     </div>
@@ -85,7 +83,7 @@
     <div id="pagelist-wrap">
         <ol id="pagelist">
             <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
-            <li>與我們聯絡：Weekly Center 池袋</li>
+            <li>與我們聯絡：Weekly Center 秋葉原 Part 1</li>
         </ol>
         <!-- END:pagelist-wrap -->
     </div>
@@ -104,7 +102,7 @@
             
             <!-- WSC[main]S -->
             <div class="tit-l">
-                <h2>與我們聯絡：Weekly Center 池袋</h2>
+                <h2>與我們聯絡：Weekly Center 秋葉原 Part 1</h2>
             </div>
 
             
@@ -139,7 +137,7 @@
                             $mailer->From = "ianchen0419@gmail.com";
                             // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
                             $mailer->FromName = "Weekly Center";  
-                            $mailer->Subject = "お問合せ_池袋"; 
+                            $mailer->Subject = "お問合せ_秋葉原 Part1"; 
                             $mailer->Body = 
                                 '■お名前'."<br>".$people_name."<br><br>".
                                 '■電話番号'."<br>".$people_phone."<br><br>".
@@ -152,7 +150,7 @@
                             if($mailer->Send()) {
                                 //成功時の記述
                                 $to_user = $people_email;
-                                $subject_user = '謝謝您的詢問：weeklycenter 池袋'; 
+                                $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part1'; 
                                 $headers_user = "From: ianchen0419@gmail.com";
                                 // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
@@ -258,9 +256,7 @@
 <!-- WCNAXS -->
 <script type="text/javascript" src="../wcax.js"></script>
 <script type="text/javascript">
-    <!-- 
-    AxWrite('400179691001','ax171212222956027');
-// -->
+    AxWrite('400179691001','ax171212222955195');
 </script>
 <!-- WCNAXE -->
 </body>

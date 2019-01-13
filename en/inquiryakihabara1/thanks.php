@@ -1,3 +1,14 @@
+<?php 
+    session_start(); 
+    if(isset($_POST['code'])) {  
+        if($_POST['code'] == $_SESSION['code']){
+            // データは再送信されようとします
+            header ('Location: https://weeklycenter.co.jp');
+            return;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -18,12 +29,11 @@
     <script src="../common/js/jquery.min.js"></script>
     <script src="../common/js/wc_script.js"></script>
     <link href="//weeklycenter.co.jp/" rel="index" title="If you're looking for short stay apartment in Tokyo and Saitama, Weekly Center will be the best choice for you.">
-    <!-- $$$CON:contact-s.php -->
-    <!-- $$$CPP:LOC$$$ -->
     <link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
     <script type="text/javascript" src="../wctarget.js"></script>
 </head>
 <body id="acp-page">
+
     <div id="header-wrap">
         <div id="header">
             <div id="logo">
@@ -73,7 +83,6 @@
     <div id="pagelist-wrap">
         <ol id="pagelist">
             <li><!-- $$$TXS:コメント9$$$ --><a href="../index.html">HOME</a><!-- $$$TXE --></li>
-            <li><!-- $$$TXS:コメント10$$$ --><a href="../inquiry/index.html">Contact Us</a><!-- $$$TXE --></li>
             <li>Contact Form: Weekly Center Akihabara Part 1</li>
         </ol>
         <!-- END:pagelist-wrap -->
@@ -81,7 +90,7 @@
 
     <div id="title-wrap">
         <div><h3>
-          <span class="en"><!-- $$$TXS:コメント12$$$ -->Inquiry<!-- $$$TXE --></span>
+          <span class="en"><!-- $$$TXS:コメント11$$$ -->Inquiry<!-- $$$TXE --></span>
           <span class="ja">Contact Us</span></h3>
       </div>
       <!-- END:title-wrap -->
@@ -90,70 +99,104 @@
   <div id="container-wrap">
     <div id="container">
         <main>
-
+            
             <!-- WSC[main]S -->
-
             <div class="tit-l">
                 <h2>Contact Form: Weekly Center Akihabara Part 1</h2>
             </div>
-            <div class="containerbox">        
+
+            
+
+            <div class="containerbox">
 
 
-                <p class="boxwrap1">Please click the content confirmation button after filling in the mandatory items and other items.<br>【Note】We can not answer questions about vacancy information and residency.</p>
-                <div class="form reservationform">
-                    <form method="post" action="thanks.php" onsubmit="code.value=new Date();"  >
-                        <input type="hidden" name="code" id="code">
+                <p class="boxwrap1">
+                    <?php
+                        if (!empty($_POST['your_submit'])){
+                            require_once "../phpmailer/class.phpmailer.php";
+                            $_SESSION['code']=$_POST['code'];
+                            // 文字の処理
+                            $people_name = htmlspecialchars($_POST['mailform1']);
+                            $people_phone = htmlspecialchars($_POST['mailform3']);
+                            $people_email = htmlspecialchars($_POST['mailform4']);
+                            $people_address = htmlspecialchars($_POST['localaddress1']);
+                            $people_message = htmlspecialchars($_POST['mailform9']);
 
-                        <!-- $$$COS -->
-                        <div class="dibox">
-                            <table class="tb-box1">
-                                <!-- $$$TAS:お問合せ$$$ -->
-                                <tr>
-                                    <th><!-- $$$TXS:コメント16$$$ --><span class="red">※</span>Name</th>
-                                    <td>
-                                        <input type="text" name="mailform1" size="30" value="" class="fm-txt" required >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><!-- $$$TXS:コメント18$$$ --><span class="red">※</span>Telephone</th>
-                                    <td>
-                                        <input type="tel" name="mailform3" size="30" value="" class="fm-txt" required >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><!-- $$$TXS:コメント19$$$ --><span class="red">※</span>E-mail</th>
-                                    <td><input type="email" name="mailform4" size="30" class="fm-txt" required></td>
-                                </tr>
-                                <tr class="form-add"><!-- $$$LOC -->
-                                    <th><!-- $$$TXS:コメント20$$$ --><span class="red">※</span>Address</th>
-                                    <td><input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" required ></td>
-                                </tr>
-                                <tr>
-                                    <th>Inquiry content / opinion</th>
-                                    <td>
-                                      <textarea name="mailform9" rows="4" class="fm-texa"></textarea>
-                                  </td>
-                              </tr>
-                              <!-- $$$TAE -->
-                          </table>
-                      </div>
-                      <!-- $$$COE -->
+                            $mailer = new PHPMailer();
+                            $mailer->SMTPSecure = "ssl";
+                            $mailer->Host = "smtp.gmail.com";
+                            $mailer->Port = 465;
+                            $mailer->CharSet = "utf-8";    
+                            $mailer->Username = "inquiry.workcapital@gmail.com";       
+                            $mailer->Password = "contactwc180623@"; 
+                            $mailer->IsSMTP();
+                            $mailer->SMTPAuth = true;
+                            $mailer->SMTPDebug  = 1;
+                            $mailer->Encoding = "base64";
+                            $mailer->IsHTML(true); 
+                            $mailer->From = "ianchen0419@gmail.com";
+                            // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
+                            $mailer->FromName = "Weekly Center";  
+                            $mailer->Subject = "お問合せ_秋葉原 Part1"; 
+                            $mailer->Body = 
+                                '■お名前'."<br>".$people_name."<br><br>".
+                                '■電話番号'."<br>".$people_phone."<br><br>".
+                                '■メールアドレス'."<br>".$people_email."<br><br>".
+                                '■住所'."<br>".$people_address."<br><br>".
+                                '■お問い合せ内容・ご意見'."<br>".nl2br($people_message)."<br><br>";
+                            $mailer->AddAddress("ianchen0419@gmail.com"); 
+                            // $mailer->AddAddress("form_ikebukuro@weeklycenter.co.jp"); 
+                            
+                            if($mailer->Send()) {
+                                //成功時の記述
+                                $to_user = $people_email;
+                                $subject_user = 'Thank you for your inquiry.: weeklycenter Akihabara Part1'; 
+                                $headers_user = "From: ianchen0419@gmail.com";
+                                // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
+                                $content_user = 
+                                    'Dear '.$people_name."\n".
+                                    'Thank you for your inquiry.'."\n".
+                                    '----------------------------------------------------------'."\n\n\n".
+                                    '■Name'."\n".$people_name."\n\n".
+                                    '■Telephone'."\n".$people_phone."\n\n".
+                                    '■E-mail'."\n".$people_email."\n\n".
+                                    '■Address'."\n".$people_address."\n\n".
+                                    '■Inquiry content / opinion'."\n".$people_message."\n\n".
+                                    '----------------------------------------------------------'."\n\n".
+                                    '================================='."\n".
+                                    'Weekly Center Co., Ltd.'."\n".
+                                    '604, 2 Kandakitanorimonocho, Chiyoda-ku, Tokyo, 101-0036, JAPAN'."\n\n".
+                                    '■Tokyo Reservation Center TEL.03-5950-1111'."\n".
+                                    '■Akihabara direct line TEL.03-5820-0111'."\n".
+                                    '■Ochanomizu Sales Office TEL.03-5807-6980'."\n".
+                                    '■Saitama Reservation Center TEL.048-651-1111'."\n".
+                                    '================================='."\n\n";
 
-                      <div class="to-submit">
-                        <input type="submit" value="Confirm" name="your_submit">
-                    </div>
+                                mail($to_user, $subject_user, $content_user, $headers_user);
+                                print_r('Thank you for your inquiry.');
+                            } else {
+                                //失敗時の記述
+                                print_r('送信失敗しました');
+                            }
+                        }
+                                
 
-                </form>
+                    ?>
+
+
+                
+
+                </p>
+
+                
             </div>
-        </div>
 
-
-        <!-- WSC[main]E -->
-
-    </main>
-    <!-- END:container -->
-</div>
-<!-- END:container-wrap -->
+            <!-- WSC[main]E -->
+            
+        </main>
+        <!-- END:container -->
+    </div>
+    <!-- END:container-wrap -->
 </div>
 
 <!-- $$$CMS:共通footer$$$ -->
@@ -205,14 +248,14 @@
 <script src="../common/js/ScrollToPlugin.min.js"></script>
 <script src="../common/js/swiper.min.js"></script>
 <script src="../common/js/perfect-scrollbar.min.js"></script>
-<script src="../common/js/bootstrap-datepicker.min.js"></script>
-<script src="../common/js/bootstrap-datepicker.ja.min.js"></script>
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
 <script src="https://zipcode.global-websystem.net/api/postcode.js"></script>
 <script src="../common/js/script.js"></script>
 <!-- WCNAXS -->
 <script type="text/javascript" src="../wcax.js"></script>
 <script type="text/javascript">
-    AxWrite('400179691001','ax171212222954921');
+    AxWrite('400179691001','ax171212222955195');
 </script>
 <!-- WCNAXE -->
 </body>
