@@ -170,7 +170,8 @@ if(isset($_POST['code'])) {
                                 //成功時の記述
                                 $to_user = $people_email;
                                 $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part1'; 
-                                $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
+                                $headers_user = "From: ianchen0419@gmail.com";
+                                // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
                                 $content_user = 
                                     'Dear '.$people_name."\n".
                                     '謝謝您的詢問。'."\n".

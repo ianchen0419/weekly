@@ -106,10 +106,8 @@
             <div class="containerbox">
 
                 <div class="form reservationform">
-                    <form method="post" action="/cgi-bin/contact-s.php">
-                        <input type="hidden" name="SET_FILE" value="/reservation90/saitamaset.ini" />
-                        <input type="hidden" name="WC_SHIFT" value="/" />
-
+                    <form method="post" action="saitamathanks.php" onsubmit="code.value=new Date();">
+                        <input type="hidden" name="code" id="code">
                         <!-- $$$COS -->
                         <div class="dibox">
                             <table class="tb-box1">
@@ -150,11 +148,11 @@
                                     <th><!-- $$$TXS:コメント20$$$ --><span class="red">※</span>预定使用期间<!-- $$$TXE --></th>
                                     <td id="jquery-ui-datepicker-wrap">
                                         <div>
-                                            <!-- $$$TXS:コメント$$$ -->in<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-from" name="jquery-ui-datepicker-from" value="" class="fm-txt" /><!-- $$$TXS:コメント21$$$ -->
+                                            <!-- $$$TXS:コメント$$$ -->in<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-from" name="jquery-ui-datepicker-from" value="" class="fm-txt" required /><!-- $$$TXS:コメント21$$$ -->
                                             <!-- $$$TXE --><p class="datepicker-from-text"></p>
                                         </div>
                                         <div>
-                                            <!-- $$$TXS:コメント$$$ -->out<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-to" name="jquery-ui-datepicker-to" value="" class="fm-txt" /><!-- $$$TXS:コメント22$$$ -->10点为止
+                                            <!-- $$$TXS:コメント$$$ -->out<!-- $$$TXE --><input type="text" id="jquery-ui-datepicker-to" name="jquery-ui-datepicker-to" value="" class="fm-txt" required /><!-- $$$TXS:コメント22$$$ -->10点为止
                                             <!-- $$$TXE --><p class="datepicker-to-text"></p>
                                         </div>
                                     </td>
@@ -164,13 +162,13 @@
                                     <td>
                                       <!-- $$$TAS:お申し込み種別$$$ -->
 
-                                      <label><!-- $$$LOC --><input type="radio" name="mailform7" value="个人" class="fm-rad" /><!-- $$$CDS -->
+                                      <label><!-- $$$LOC --><input type="radio" name="mailform7" value="個人" class="fm-rad" required /><!-- $$$CDS -->
                                         <!-- $$$TXS:コメント$$$ -->
                                         个人
                                         <!-- $$$TXE -->
                                         <!-- $$$CDE --></label><!-- $$$TAX -->
 
-                                        <label><input type="radio" name="mailform7"  value="法人" class="fm-rad" /><!-- $$$CDS -->
+                                        <label><input type="radio" name="mailform7"  value="法人" class="fm-rad" required /><!-- $$$CDS -->
                                             <!-- $$$TXS:コメント$$$ -->
                                             公司行号
                                             <!-- $$$TXE -->
@@ -180,23 +178,32 @@
                                     <tr>
                                         <th><!-- $$$TXS:コメント24$$$ --><span class="red">※</span>申请者姓名<!-- $$$TXE --></th>
                                         <td>
-                                            <input type="text" name="mailform8" size="30" value="" class="fm-txt" >
+                                            <input type="text" name="mailform8" size="30" value="" class="fm-txt" required >
                                         </td>
                                     </tr>
                                     <tr>
                                         <th><!-- $$$TXS:コメント26$$$ --><span class="red">※</span>TEL<!-- $$$TXE --></th>
                                         <td>
-                                            <input type="text" name="mailform10" size="30" value="" class="fm-txt" >
+                                            <input type="text" name="mailform10" size="30" value="" class="fm-txt" required >
                                         </td>
                                     </tr>
                                     <tr>
                                         <th><!-- $$$TXS:コメント27$$$ --><span class="red">※</span>E-Mail</th>
-                                        <td><input type="text" name="mailform11" size="30" class="fm-txt"></td>
+                                        <td><input type="text" name="mailform11" size="30" class="fm-txt" required></td>
+                                    </tr>
+                                    <tr>
+                                        <th><!-- $$$TXS:コメント28$$$ -->
+                                            <span class="red">※</span>国籍
+                                            <!-- $$$TXE -->
+                                        </th>
+                                        <td>
+                                            <input type="text" name="country" id="country" size="30" value="" class="fm-txt" required >
+                                        </td>
                                     </tr>
                                     <tr class="form-add"><!-- $$$LOC -->
                                         <th><!-- $$$TXS:コメント28$$$ --><span class="red">※</span>住址<!-- $$$TXE --></th>
                                         <td>
-                                            <input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" >
+                                            <input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" required >
                                         </td>
                                     </tr>
                                     <tr>
@@ -208,7 +215,7 @@
                                   <tr class="complement"><!-- $$$LOC -->
                                     <td colspan="2">
                                         <p>在预订之前，请务必阅读「<a href="../terms/index.html">Weekly Center利用手册</a>」<br>请同意内容并进行预订。</p>
-                                        <label><!-- $$$LOC --><input type="checkbox" name="mailform18[0]" value="内容を確認の上同意" class="fm-chk" />确认后请同意内容</label>
+                                        <label><!-- $$$LOC --><input type="checkbox" name="mailform18[0]" value="内容を確認の上同意" class="fm-chk" required />确认后请同意内容</label>
                                     </td>
                                 </tr>
                                 <!-- $$$TAE -->
@@ -217,7 +224,7 @@
                         <!-- $$$COE -->
 
                         <div class="to-submit">
-                            <input type="submit" value="确　认">
+                            <input type="submit" value="确　认" name="your_submit">
                         </div>
 
                     </form>
