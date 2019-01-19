@@ -151,8 +151,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->From = "ianchen0419@gmail.com";
-                            // $mailer->From 'form_ikebukuro@weeklycenter.co.jp';     
+                            $mailer->From 'form_akihabara@weeklycenter.co.jp';     
                             $mailer->FromName = "Weekly Center";  
                             $mailer->Subject = "ご予約_秋葉原 Part1"; 
                             $mailer->Body = 
@@ -169,15 +168,13 @@
                                 '■国籍'."<br>".$people_country."<br><br>".
                                 '■住所'."<br>".$people_address."<br><br>".
                                 '■通信欄その他ご希望・お問合せ'."<br>".nl2br($people_comment)."<br><br>";
-                            $mailer->AddAddress("ianchen0419@gmail.com"); 
-                            // $mailer->AddAddress("form_ikebukuro@weeklycenter.co.jp"); 
+                            $mailer->AddAddress("form_akihabara@weeklycenter.co.jp"); 
                             
                             if($mailer->Send()) {
                                 //成功時の記述
                                 $to_user = $people_email;
                                 $subject_user = '謝謝您的詢問：weeklycenter 秋葉原 Part1'; 
-                                $headers_user = "From: ianchen0419@gmail.com";
-                                // $headers_user = "From: form_ikebukuro@weeklycenter.co.jp";
+                                $headers_user = "From: form_akihabara@weeklycenter.co.jp";
                                 $content_user = 
                                     'Dear '.$people_name."\n".
                                     '謝謝您的詢問。'."\n".
