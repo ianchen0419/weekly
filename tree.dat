@@ -13,6 +13,8 @@ saitama/oomiya3.html,saitama/index.html,ƒEƒB[ƒNƒŠ[ƒZƒ“ƒ^[‘å‹{ Part3iƒGƒNƒZƒ‹
 saitama/miyahara.html,saitama/index.html,ƒzƒƒCƒgƒnƒCƒc,0
 saitama/nisshin.html,saitama/index.html,‘æ13‘å‹{ƒnƒCƒc,1
 saitama/nishikawaguchi_rental.html,saitama/index.html,¼ìŒû‘İ––±Š,0
+kanagawa/index.html,index.html,_“ŞìƒGƒŠƒAˆê——,0
+kanagawa/yugawara_plaza.html,kanagawa/index.html,“’‰ÍŒ´ƒvƒ‰ƒU,0
 terms/index.html,index.html,‚²—˜—p‚Ìèˆø‚«,0
 reserve/index.html,index.html,‚²—\–ñ,0
 charge/index.html,index.html,‚²—˜—p—¿‹à‚É‚Â‚¢‚Ä,0
@@ -53,7 +55,7 @@ inquiryakihabara2/thanks.html,inquiryakihabara2/index.html,‘—MŠ®—¹,0
 inquiryikebukuro/index.html,index.html,’r‘Ü‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€,0
 inquiryikebukuro/indexconf.dst,inquiryikebukuro/index.html,Šm”F‰æ–Ê,0
 inquiryikebukuro/thanks.html,inquiryikebukuro/index.html,‘—MŠ®—¹,0
-inquiryochanomizu/index.html,index.html,Œä’ƒƒm…‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€,0
+inquiryochanomizu/index.html,index.html,Œä’ƒƒm…‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€,1
 inquiryochanomizu/indexconf.dst,inquiryochanomizu/index.html,Šm”F‰æ–Ê,0
 inquiryochanomizu/thanks.html,inquiryochanomizu/index.html,‘—MŠ®—¹,0
 inquirysaitama/index.html,index.html,é‹Ê‚¨–â‚¢‡‚í‚¹ƒtƒH[ƒ€,0
@@ -86,13 +88,13 @@ reservation30/ikebukurothanks.html,reservation30/ikebukuro.html,’r‘Ü—\–ñ30day‘—
 reservation90/ikebukuro.html,index.html,’r‘Ü—\–ñ90day,0
 reservation90/ikebukuroconf.dst,reservation90/ikebukuro.html,’r‘Ü—\–ñ90dayŠm”F‰æ–Ê,0
 reservation90/ikebukurothanks.html,reservation90/ikebukuro.html,’r‘Ü—\–ñ90day‘—MŠ®—¹,0
-reservationochanomizu/index.html,index.html,Œä’ƒƒm…—\–ñ7day,0
+reservationochanomizu/index.html,index.html,Œä’ƒƒm…—\–ñ7day,1
 reservationochanomizu/indexconf.dst,reservationochanomizu/index.html,Œä’ƒƒm…—\–ñ7dayŠm”F‰æ–Ê,0
 reservationochanomizu/thanks.html,reservationochanomizu/index.html,Œä’ƒƒm…—\–ñ7day‘—MŠ®—¹,0
-reservation30/ochanomizu.html,index.html,Œä’ƒƒm…—\–ñ30day,0
+reservation30/ochanomizu.html,index.html,Œä’ƒƒm…—\–ñ30day,1
 reservation30/ochanomizuconf.dst,reservation30/ochanomizu.html,Œä’ƒƒm…—\–ñ30dayŠm”F‰æ–Ê,0
 reservation30/ochanomizuthanks.html,reservation30/ochanomizu.html,Œä’ƒƒm…—\–ñ30day‘—MŠ®—¹,0
-reservation90/ochanomizu.html,index.html,Œä’ƒƒm…—\–ñ90day,0
+reservation90/ochanomizu.html,index.html,Œä’ƒƒm…—\–ñ90day,1
 reservation90/ochanomizuconf.dst,reservation90/ochanomizu.html,Œä’ƒƒm…—\–ñ90dayŠm”F‰æ–Ê,0
 reservation90/ochanomizuthanks.html,reservation90/ochanomizu.html,Œä’ƒƒm…—\–ñ90day‘—MŠ®—¹,0
 reservationsaitama/index.html,index.html,é‹Ê—\–ñ7day,0

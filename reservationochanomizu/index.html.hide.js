@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ウィークリーセンター御茶ノ水ご予約フォーム | ウィークリーセンター</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta content="ウィークリーマンション,東京,マンスリーマンション,埼玉,ウィークリーセンター,Weekly Center" name="keywords">
+        <meta content="マンスリーマンション・ウィークリーマンション（東京・埼玉）をお探しの方は【ウィークリーセンター】へ。カバン一つでの入居で、即自炊生活ができちゃうほどの設備と徹底した室内清掃で、いつでもキレイで快適！" name="description">
+        <meta content="all" name="Robots">
+        <link href="../favicon.ico" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+        <link href="../common/css/plugin.css" rel="stylesheet">
+        <link href="../common/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="https://zipcode.global-websystem.net/api/postcode.css" type="text/css" />
+        <script src="../common/js/jquery.min.js"></script>
+        <script src="../common/js/wc_script.js"></script>
+        <link href="//weeklycenter.co.jp/" rel="index" title="ウィークリーマンションを東京・埼玉でお探しなら【ウィークリーセンター】へ！">
+        
+        
+<link rel="stylesheet" href="../webchangercmn.css" type="text/css" />
+<link rel="stylesheet" href="indexwebchanger.css" type="text/css" />
+<script type="text/javascript" src="../wctarget.js"></script>
+</head>
+    <body id="acp-page">
+
+        <div id="header-wrap">
+            <div id="header">
+                <header>
+                    <div id="logo">
+                        
+                        <p id="logo-text">ウィークリーマンションを東京・埼玉でお探しなら【ウィークリーセンター】へ！</p>
+                        
+                        <h1><a href="/"><img src="../common/img/logo.svg" alt="ウィークリーセンター" width="307" height="61">&nbsp;</a></h1>
+                    </div>
+                    
+                    <div id="header-navi">
+                        <nav>
+                            <ul id="navi-sub">
+                                <li><a href="../faq/index.html">よくあるご質問</a></li>
+                                <li><a href="../company/index.html" title="会社概要">会社概要</a></li>
+                            </ul>
+                            <ul id="navi-main">
+                                <li class="nm01"><a href="../tokyo/index.html" title="東京エリア一覧">東京エリア一覧</a></li>
+                                <li class="nm02"><a href="../saitama/index.html" title="埼玉エリア一覧">埼玉エリア一覧</a></li>
+                                <li class="nm03"><a href="../reserve/index.html">ご予約</a></li>
+                                <li class="nm04"><a href="../charge/index.html" title="ご利用料金について">ご利用料金について</a></li>
+                                <li class="nm05"><a title="お問い合わせ" href="../inquiry/index.html">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </header>
+            <!-- END:header -->
+            </div>
+        <!-- END:header-wrap -->
+        </div>
+
+        <div id="pagelist-wrap">
+            <ol id="pagelist">
+                <li><a href="../index.html">HOME</a></li>
+                <li>ウィークリーセンター御茶ノ水ご予約フォーム</li>
+            </ol>
+        <!-- END:pagelist-wrap -->
+        </div>
+
+        <div id="title-wrap">
+            <div><h3>
+              <span class="en">RESERVE</span>
+                <span class="ja">ご予約フォーム</span></h3>
+            </div>
+        <!-- END:title-wrap -->
+        </div>
+
+        <div id="container-wrap">
+            <div id="container">
+                <main>
+                    
+                    
+
+                    <div class="tit-l">
+                        <h2>ウィークリーセンター御茶ノ水ご予約フォーム</h2>
+                    </div>
+                    
+
+                    <div class="containerbox">
+
+                        <div class="form reservationform">
+                            <form method="post" action="./">
+<input type="hidden" name="form" value="15" data-sp="" />
+                                <input type="hidden" name="SET_FILE" value="/reservationochanomizu/indexset.ini" />
+                                <input type="hidden" name="WC_SHIFT" value="/" />
+                                
+                                <!-- $$$COS -->
+                                <div class="dibox">
+                                <table class="tb-box1">
+                                
+<tr class="reservationcontents">
+                                    <th>
+                                        ご予約内容
+                                    </th>
+                                    <td>
+                                        <div class="residentName-text">
+                                            <dl>
+                                                <dt>建物名</dt>
+                                                <dd><input type="text" name="resident_name" value=""></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="peoplenumber-text">
+                                            <dl>
+                                                <dt>利用人数</dt>
+                                                <dd><input type="text" name="people_number" value=""></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="roomType-text">
+                                            <dl>
+                                                <dt>部屋タイプ</dt>
+                                                <dd><input type="text" name="room_type" value=""></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="plan-text">
+                                            <dl>
+                                                <dt>プラン</dt>
+                                                <dd><input type="text" name="plan" value=""></dd>
+                                            </dl>
+                                        </div>
+                                        <div class="reservationreset">
+                                            <!-- $$$CDS --><p>ご予約内容をリセットする。※他の入力内容もリセットされます。</p><!-- $$$CDE -->
+                                        </div>
+                                    </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>利用予定期間</th>
+                                  <td id="jquery-ui-datepicker-wrap">
+                                    <div>
+                                        in<input type="text" id="jquery-ui-datepicker-from" name="jquery-ui-datepicker-from" value="" class="fm-txt" /> から
+                                        <p class="datepicker-from-text"></p>
+                                    </div>
+                                    <div>
+                                        out<input type="text" id="jquery-ui-datepicker-to" name="jquery-ui-datepicker-to" value="" class="fm-txt" />10時まで
+                                        <p class="datepicker-to-text"></p>
+                                    </div>
+                                  </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>お申し込み種別</th>
+                                  <td>
+                                      
+                                
+                                  <label><input type="radio" name="mailform7" value="個人" class="fm-rad" /><!-- $$$CDS -->
+                                    
+                                    個人
+                                    
+                                    <!-- $$$CDE --></label>
+                                        
+                                  <label><input type="radio" name="mailform7"  value="法人" class="fm-rad" /><!-- $$$CDS -->
+                                    
+                                    法人
+                                    
+                                    <!-- $$$CDE --></label>
+                                  </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>お申し込み者氏名</th>
+                                  <td>
+                                    <input type="text" name="mailform8" size="30" value="" class="fm-txt" >
+                                  </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>フリガナ</th>
+                                  <td>
+                                    <input type="text" name="mailform9" size="30" value="" class="fm-txt" >
+                                  </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>電話番号</th>
+                                  <td>
+                                    <input type="text" name="mailform10" size="30" value="" class="fm-txt" >
+                                  </td>
+                                </tr>
+<tr>
+                                <th><span class="red">※</span>メールアドレス</th>
+                                  <td><input type="text" name="mailform11" size="30" class="fm-txt"></td>
+                                </tr>
+<tr class="form-add">
+                                <th><span class="red">※</span>住所</th>
+                                  <td>
+                                    <div><!-- $$$CDS -->
+                                        郵便番号<!-- $$$CDE --><input type="text" name="zip1" id="zip_A2_dash_1" size="10" value="" class="fm-txt zipcode" >-<input type="text" name="zip2" id="zip_A2_dash_2" size="10" value="" class="fm-txt zipcode" >
+                                        <!-- $$$CDS --><div class="to-submit">
+                                            <input type="button" value="住所検索" onclick="Postcode.getAddressTypeA2('zip_A2_dash_1','zip_A2_dash_2','pref_A2_dash','localaddress_A2_dash_1');"/>
+                                        </div><!-- $$$CDE --><br>
+                                    </div><!-- $$$CDS -->
+                                    都道府県
+                                <!-- $$$CDE --><select name="pref" id="pref_A2_dash" class="fm-sel">
+                                <option value=""  >----</option>
+                                <option value="北海道"  >北海道</option>
+                                <option value="青森県"  >青森県 </option>
+                                <option value="岩手県"  >岩手県 </option>
+                                <option value="宮城県"  >宮城県 </option>
+                                <option value="秋田県"  >秋田県 </option>
+                                <option value="山形県"  >山形県 </option>
+                                <option value="福島県"  >福島県 </option>
+                                <option value="茨城県"  >茨城県 </option>
+                                <option value="栃木県"  >栃木県 </option>
+                                <option value="群馬県"  >群馬県 </option>
+                                <option value="埼玉県"  >埼玉県 </option>
+                                <option value="千葉県"  >千葉県 </option>
+                                <option value="東京都"  >東京都 </option>
+                                <option value="神奈川県"  >神奈川県 </option>
+                                <option value="新潟県"  >新潟県 </option>
+                                <option value="山梨県"  >山梨県 </option>
+                                <option value="富山県"  >富山県 </option>
+                                <option value="石川県"  >石川県 </option>
+                                <option value="福井県"  >福井県 </option>
+                                <option value="長野県"  >長野県 </option>
+                                <option value="岐阜県"  >岐阜県 </option>
+                                <option value="静岡県"  >静岡県 </option>
+                                <option value="愛知県"  >愛知県 </option>
+                                <option value="三重県"  >三重県 </option>
+                                <option value="滋賀県"  >滋賀県 </option>
+                                <option value="京都府"  >京都府 </option>
+                                <option value="大阪府"  >大阪府 </option>
+                                <option value="兵庫県"  >兵庫県 </option>
+                                <option value="奈良県"  >奈良県 </option>
+                                <option value="和歌山県"  >和歌山県 </option>
+                                <option value="鳥取県"  >鳥取県 </option>
+                                <option value="島根県"  >島根県 </option>
+                                <option value="岡山県"  >岡山県 </option>
+                                <option value="広島県"  >広島県 </option>
+                                <option value="山口県"  >山口県 </option>
+                                <option value="徳島県"  >徳島県 </option>
+                                <option value="香川県"  >香川県 </option>
+                                <option value="愛媛県"  >愛媛県 </option>
+                                <option value="高知県"  >高知県 </option>
+                                <option value="福岡県"  >福岡県 </option>
+                                <option value="佐賀県"  >佐賀県 </option>
+                                <option value="長崎県"  >長崎県 </option>
+                                <option value="熊本県"  >熊本県 </option>
+                                <option value="大分県"  >大分県 </option>
+                                <option value="宮崎県"  >宮崎県 </option>
+                                <option value="鹿児島県"  >鹿児島県 </option>
+                                <option value="沖縄県"  >沖縄県 </option>
+                                </select><br />
+                                <!-- $$$CDS -->市区町村番地・建物名<!-- $$$CDE -->
+                                <input type="text" name="localaddress1" id="localaddress_A2_dash_1" size="30" value="" class="fm-txt" >
+                                  </td>
+                                </tr>
+<tr>
+                                <th>通信欄<br>
+その他ご希望・お問合せ
+                                </th>
+                                  <td>
+                                  <textarea name="mailform12" rows="4" class="fm-texa"></textarea>
+                                  </td>
+                                </tr>
+<tr class="complement">
+                                <td colspan="2">
+                                <p>ご予約前に「<a href="../terms/index.html">ウィークリーマンションご利用の手引き</a>」を必ずお読みいただき、<br>
+                                    内容にご同意いただいたうえでご予約ください。</p>
+<label><input type="checkbox" name="mailform18[0]" value="内容を確認の上同意" class="fm-chk" /><!-- $$$CDS -->内容を確認の上同意<!-- $$$CDE --></label>
+                                </td>
+                                </tr>
+
+                                </table>
+                                </div>
+                                <!-- $$$COE -->
+                                
+                                <div class="to-submit">
+                                    <input type="submit" value="確　認">
+                                </div>
+                                
+                            </form>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                        
+                </main>
+            <!-- END:container -->
+            </div>
+        <!-- END:container-wrap -->
+        </div>
+
+        
+        <div id="footer-banner-wrap">
+            <div id="footer-banner">
+                <ul>
+                    
+<li><a href="https://capitalkensetu.wixsite.com/mysite" rel="nofollow" class="wctr_blank"><img src="../common/img/img18bcf4325_1.png" alt="新型☆土留工法　048-658-3939" width="206" height="71"></a></li>
+<li><a href="http://km-jimusyo.com/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg01.gif" alt="西川口貸事務所" width="206" height="71"></a></li>
+<li><a href="http://www.oly-method.com/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg02.gif" alt="OLY工法研究会" width="206" height="71"></a></li>
+<li><a href="http://trunkroom-c.com/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg03.gif" alt="トランクROOM" width="206" height="71"></a></li>
+<li><a href="http://www.plusonecloset.com/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg04.gif" alt="Plusone Closet" width="206" height="71"></a></li>
+<li><a href="http://www.riverplaza.in/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg05.gif" alt="ウィークリーマンション八代" width="206" height="71"></a></li>
+<li><a href="http://www.bike-closet.com/" rel="nofollow" target="_blank"><img src="../common/img/footer-bannerimg06.gif" alt="バイククローゼット" width="206" height="71"></a></li>
+<li><a href="../useful/index.html"><img src="../common/img/footer-bannerimg07.gif" alt="お役立ちコンテンツ" width="206" height="71"></a></li>
+
+                </ul>
+            <!-- END:footer-banner -->
+            </div>
+        <!-- END:footer-banner-wrap -->
+        </div>
+        
+        <footer>
+            <div id="footer-wrap">
+                <div id="footer">
+                    <div class="cap-l3">
+                        <h3>ご予約・お問い合わせ電話番号</h3>
+                    </div>
+                    <ul>
+                        
+<li class="footerlist01">
+                            <p class="yoyakuc"><a href="../inquiry/index.html">東京予約センター</a></p>
+                            <address>03-5950-1111</address>
+                        </li>
+<li class="footerlist01">
+                            <p class="yoyakuc"><a href="../inquiry/index.html">秋葉原直通</a></p>
+                            <address>03-5820-0111</address>
+                        </li>
+<li class="footerlist02">
+                            <p class="yoyakuc"><a href="../inquiry/index.html">埼玉予約センター</a></p>
+                            <address>048-651-1111</address>
+                        </li>
+
+                    </ul>
+                <!-- END:footer -->
+                </div>
+            <!-- END:footer-wrap -->
+            </div>
+            <div id="copy-wrap">
+                <small>Copyright (c)<a href="../index.html">Weekly Center</a>. All rights reserved.　</small>
+            <!-- END:copy-wrap -->
+            </div>
+        </footer>
+        
+        <div id="page-side-banner">
+            <div id="pageside-top">
+                <p><a href="#">Page Top</a></p>
+            </div>
+        </div>
+        
+        
+        <script src="../common/js/modernizr.js"></script>
+        <script src="../common/js/lightbox.min.js"></script>
+        <script src="../common/js/TweenMax.min.js"></script>
+        <script src="../common/js/ScrollToPlugin.min.js"></script>
+        <script src="../common/js/swiper.min.js"></script>
+        <script src="../common/js/perfect-scrollbar.min.js"></script>
+        <script src="../common/js/bootstrap-datepicker.min.js"></script>
+        <script src="../common/js/bootstrap-datepicker.ja.min.js"></script>
+        <script src="https://zipcode.global-websystem.net/api/postcode.js"></script>
+        <script src="../common/js/script.js"></script>
+    
+<script type="text/javascript" src="../wcax.js"></script>
+<script type="text/javascript">
+<!-- 
+AxWrite('400179691001','ax171212222958334');
+// -->
+</script>
+
+</body>
+</html>
