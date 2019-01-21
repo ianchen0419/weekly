@@ -393,12 +393,12 @@ template {
 /* clearfix
  * =================================================================================
 **/
-.cf, #header-wrap, #slide-wrap, #container-wrap, #top-topics-wrap, #footer-banner-wrap, #footer-wrap, #copy-wrap, #pagelist-wrap, #header, #container, #top-topics, #footer-banner, #footer, #copy-wrap small, #pagelist, #slide, #logo h1, .tit-l, .cap-l, .cap-l2, .cap-l3, .cap-l4, .cap-m, .cap-s, .cap-recomend, #title-wrap div, .boxwrap1, .boxwrap2, .boxwrap3, .to-buttonbox, .qabox, .stepbox, .cap-property, .detailsbox, .opendetails, .to-telinquiry, .form, .imgfull, .i1, .i2, .i3, .i4, .i5, .line-hr, .noline-hr, .pagetop, .dibox, .dl-box1, .dl-box1 dl, .to-bt, .to-bt2, .stepbox ul li, .propertylist, .estate-list, #top-topics-list li, .propertydetails-cap, .propertydetails-wrap, .propertydetails .left, .propertydetails .il, .form .tb-box1 .form-add td > div, .wcarea_400179691001 li {
+.cf, #header-wrap, #slide-wrap, #container-wrap, #top-topics-wrap,#top-feature-wrap, #footer-banner-wrap, #footer-wrap, #copy-wrap, #pagelist-wrap, #header, #container, #top-topics, #top-feature, #footer-banner, #footer, #copy-wrap small, #pagelist, #slide, #logo h1, .tit-l, .cap-l, .cap-l2, .cap-l3, .cap-l4, .cap-m, .cap-s, .cap-recomend, #title-wrap div, .boxwrap1, .boxwrap2, .boxwrap3, .to-buttonbox, .qabox, .stepbox, .cap-property, .detailsbox, .opendetails, .to-telinquiry, .form, .imgfull, .i1, .i2, .i3, .i4, .i5, .line-hr, .noline-hr, .pagetop, .dibox, .dl-box1, .dl-box1 dl, .to-bt, .to-bt2, .stepbox ul li, .propertylist, .estate-list, #top-topics-list li, .propertydetails-cap, .propertydetails-wrap, .propertydetails .left, .propertydetails .il, .form .tb-box1 .form-add td > div, .wcarea_400179691001 li {
   zoom: 1; }
-  .cf:before, #header-wrap:before, #slide-wrap:before, #container-wrap:before, #top-topics-wrap:before, #footer-banner-wrap:before, #footer-wrap:before, #copy-wrap:before, #pagelist-wrap:before, #header:before, #container:before, #top-topics:before, #top-feature:before,#footer-banner:before, #footer:before, #copy-wrap small:before, #pagelist:before, #slide:before, #logo h1:before, .tit-l:before, .cap-l:before, .cap-l2:before, .cap-l3:before, .cap-l4:before, .cap-m:before, .cap-s:before, .cap-recomend:before, #title-wrap div:before, .boxwrap1:before, .boxwrap2:before, .boxwrap3:before, .to-buttonbox:before, .qabox:before, .stepbox:before, .cap-property:before, .detailsbox:before, .opendetails:before, .to-telinquiry:before, .form:before, .imgfull:before, .i1:before, .i2:before, .i3:before, .i4:before, .i5:before, .line-hr:before, .noline-hr:before, .pagetop:before, .dibox:before, .dl-box1:before, .dl-box1 dl:before, .to-bt:before, .to-bt2:before, .stepbox ul li:before, .propertylist:before, .estate-list:before, #top-topics-list li:before, .propertydetails-cap:before, .propertydetails-wrap:before, .propertydetails .left:before, .propertydetails .il:before, .form .tb-box1 .form-add td > div:before, .wcarea_400179691001 li:before, .cf:after, #header-wrap:after, #slide-wrap:after, #container-wrap:after, #top-topics-wrap:after, #footer-banner-wrap:after, #footer-wrap:after, #copy-wrap:after, #pagelist-wrap:after, #header:after, #container:after, #top-topics:after, #footer-banner:after, #footer:after, #copy-wrap small:after, #pagelist:after, #slide:after, #logo h1:after, .tit-l:after, .cap-l:after, .cap-l2:after, .cap-l3:after, .cap-l4:after, .cap-m:after, .cap-s:after, .cap-recomend:after, #title-wrap div:after, .boxwrap1:after, .boxwrap2:after, .boxwrap3:after, .to-buttonbox:after, .qabox:after, .stepbox:after, .cap-property:after, .detailsbox:after, .opendetails:after, .to-telinquiry:after, .form:after, .imgfull:after, .i1:after, .i2:after, .i3:after, .i4:after, .i5:after, .line-hr:after, .noline-hr:after, .pagetop:after, .dibox:after, .dl-box1:after, .dl-box1 dl:after, .to-bt:after, .to-bt2:after, .stepbox ul li:after, .propertylist:after, .estate-list:after, #top-topics-list li:after, .propertydetails-cap:after, .propertydetails-wrap:after, .propertydetails .left:after, .propertydetails .il:after, .form .tb-box1 .form-add td > div:after, .wcarea_400179691001 li:after {
+  .cf:before, #header-wrap:before, #slide-wrap:before, #container-wrap:before, #top-topics-wrap:before,#top-feature-wrap:before, #footer-banner-wrap:before, #footer-wrap:before, #copy-wrap:before, #pagelist-wrap:before, #header:before, #container:before, #top-topics:before, #top-feature:before,#footer-banner:before, #footer:before, #copy-wrap small:before, #pagelist:before, #slide:before, #logo h1:before, .tit-l:before, .cap-l:before, .cap-l2:before, .cap-l3:before, .cap-l4:before, .cap-m:before, .cap-s:before, .cap-recomend:before, #title-wrap div:before, .boxwrap1:before, .boxwrap2:before, .boxwrap3:before, .to-buttonbox:before, .qabox:before, .stepbox:before, .cap-property:before, .detailsbox:before, .opendetails:before, .to-telinquiry:before, .form:before, .imgfull:before, .i1:before, .i2:before, .i3:before, .i4:before, .i5:before, .line-hr:before, .noline-hr:before, .pagetop:before, .dibox:before, .dl-box1:before, .dl-box1 dl:before, .to-bt:before, .to-bt2:before, .stepbox ul li:before, .propertylist:before, .estate-list:before, #top-topics-list li:before, .propertydetails-cap:before, .propertydetails-wrap:before, .propertydetails .left:before, .propertydetails .il:before, .form .tb-box1 .form-add td > div:before, .wcarea_400179691001 li:before, .cf:after, #header-wrap:after, #slide-wrap:after, #container-wrap:after, #top-topics-wrap:after,#top-feature-wrap:after, #footer-banner-wrap:after, #footer-wrap:after, #copy-wrap:after, #pagelist-wrap:after, #header:after, #container:after, #top-topics:after, #footer-banner:after, #footer:after, #copy-wrap small:after, #pagelist:after, #slide:after, #logo h1:after, .tit-l:after, .cap-l:after, .cap-l2:after, .cap-l3:after, .cap-l4:after, .cap-m:after, .cap-s:after, .cap-recomend:after, #title-wrap div:after, .boxwrap1:after, .boxwrap2:after, .boxwrap3:after, .to-buttonbox:after, .qabox:after, .stepbox:after, .cap-property:after, .detailsbox:after, .opendetails:after, .to-telinquiry:after, .form:after, .imgfull:after, .i1:after, .i2:after, .i3:after, .i4:after, .i5:after, .line-hr:after, .noline-hr:after, .pagetop:after, .dibox:after, .dl-box1:after, .dl-box1 dl:after, .to-bt:after, .to-bt2:after, .stepbox ul li:after, .propertylist:after, .estate-list:after, #top-topics-list li:after, .propertydetails-cap:after, .propertydetails-wrap:after, .propertydetails .left:after, .propertydetails .il:after, .form .tb-box1 .form-add td > div:after, .wcarea_400179691001 li:after {
     content: "";
     display: table; }
-  .cf:after, #header-wrap:after, #slide-wrap:after, #container-wrap:after, #top-topics-wrap:after, #footer-banner-wrap:after, #footer-wrap:after, #copy-wrap:after, #pagelist-wrap:after, #header:after, #container:after, #top-topics:after,#top-feature:after, #footer-banner:after, #footer:after, #copy-wrap small:after, #pagelist:after, #slide:after, #logo h1:after, .tit-l:after, .cap-l:after, .cap-l2:after, .cap-l3:after, .cap-l4:after, .cap-m:after, .cap-s:after, .cap-recomend:after, #title-wrap div:after, .boxwrap1:after, .boxwrap2:after, .boxwrap3:after, .to-buttonbox:after, .qabox:after, .stepbox:after, .cap-property:after, .detailsbox:after, .opendetails:after, .to-telinquiry:after, .form:after, .imgfull:after, .i1:after, .i2:after, .i3:after, .i4:after, .i5:after, .line-hr:after, .noline-hr:after, .pagetop:after, .dibox:after, .dl-box1:after, .dl-box1 dl:after, .to-bt:after, .to-bt2:after, .stepbox ul li:after, .propertylist:after, .estate-list:after, #top-topics-list li:after, .propertydetails-cap:after, .propertydetails-wrap:after, .propertydetails .left:after, .propertydetails .il:after, .form .tb-box1 .form-add td > div:after, .wcarea_400179691001 li:after {
+  .cf:after, #header-wrap:after, #slide-wrap:after, #container-wrap:after, #top-topics-wrap:after, #top-feature-wrap:after, #footer-banner-wrap:after, #footer-wrap:after, #copy-wrap:after, #pagelist-wrap:after, #header:after, #container:after, #top-topics:after,#top-feature:after, #footer-banner:after, #footer:after, #copy-wrap small:after, #pagelist:after, #slide:after, #logo h1:after, .tit-l:after, .cap-l:after, .cap-l2:after, .cap-l3:after, .cap-l4:after, .cap-m:after, .cap-s:after, .cap-recomend:after, #title-wrap div:after, .boxwrap1:after, .boxwrap2:after, .boxwrap3:after, .to-buttonbox:after, .qabox:after, .stepbox:after, .cap-property:after, .detailsbox:after, .opendetails:after, .to-telinquiry:after, .form:after, .imgfull:after, .i1:after, .i2:after, .i3:after, .i4:after, .i5:after, .line-hr:after, .noline-hr:after, .pagetop:after, .dibox:after, .dl-box1:after, .dl-box1 dl:after, .to-bt:after, .to-bt2:after, .stepbox ul li:after, .propertylist:after, .estate-list:after, #top-topics-list li:after, .propertydetails-cap:after, .propertydetails-wrap:after, .propertydetails .left:after, .propertydetails .il:after, .form .tb-box1 .form-add td > div:after, .wcarea_400179691001 li:after {
     clear: both; }
 
 /* END:clearfix
@@ -497,12 +497,12 @@ img {
 body {
   background: url("../img/back.gif") repeat left top; }
 
-#header-wrap, #slide-wrap, #container-wrap, #top-topics-wrap, #footer-banner-wrap, #footer-wrap, #copy-wrap, #pagelist-wrap {
+#header-wrap, #slide-wrap, #container-wrap, #top-topics-wrap, #top-feature-wrap, #footer-banner-wrap, #footer-wrap, #copy-wrap, #pagelist-wrap {
   margin: 0;
   padding: 0;
   position: relative; }
 
-#header, #container, #top-topics,#top-feature, #footer-banner, #footer, #copy-wrap small, #pagelist {
+#header, #container, #top-topics,#top-topics,#top-feature, #footer-banner, #footer, #copy-wrap small, #pagelist {
   width: 1100px;
   margin: 0 auto;
   padding: 0;
@@ -530,7 +530,7 @@ body {
       width: auto;
       height: auto;
       margin: 0;
-    text-decoration:none; }
+	  text-decoration:none; }
     @media screen and (max-width: 680px) {
       #logo h1 {
         float: none;
@@ -1497,7 +1497,7 @@ body {
     margin: 0;
     font-weight: 700; }
     .to-bt2 p a {
-      display: inline;
+      display: inline-block;
       padding: 1% 20px 1% 1%;
       text-align: center;
       color: #262515;
@@ -1887,7 +1887,7 @@ body {
             flex: 0 0 auto;
             font-weight: 900;
             margin-bottom: 8px; }
-      .propertylist ul li .left .propertylist-cap h3{ flex: 0 0 100%;}
+			.propertylist ul li .left .propertylist-cap h3{ flex: 0 0 100%;}
           .propertylist ul li .left .propertylist-cap h2, .propertylist ul li .il .propertylist-cap h2, .propertylist ul li .left .propertylist-cap h3, .propertylist ul li .il .propertylist-cap h3 {
             margin-right: 3%; }
           .propertylist ul li .left .propertylist-cap h2, .propertylist ul li .il .propertylist-cap h2 {
@@ -1964,12 +1964,17 @@ body {
               background-image: url("../img/icon-semidouble.svg");
               background-size: 26px 23px;
               border-right-color: #E5DFD5; }
-        .propertylist ul li .left div.propertylist-plan dl.single dt {
+			  .propertylist ul li .left div.propertylist-plan dl.single dt {
               border-left-color: #E5DFD5;
               background-image: url("../img/icon-single.svg");
               background-size: 18px 23px; }
+              .propertylist ul li .left div.propertylist-plan dl.doub dt {
+              border-left-color: #E5DFD5;
+              background-image: url("../img/icon-two.svg");
+              background-size: 18px 23px; }
             .propertylist ul li .left div.propertylist-plan dl:nth-child(3n) dd, .propertylist ul li .il div.propertylist-plan dl:nth-child(3n) dd {
               border-left: #fff; }
+              
             .propertylist ul li .left div.propertylist-plan dl:empty dt, .propertylist ul li .il div.propertylist-plan dl:empty dt {
               background-image: none;
               position: relative; }
@@ -2189,7 +2194,7 @@ body {
       position: relative;
       }
 .estate-list ul li.onhover {
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 }
       .estate-list ul li:before, .estate-list ul li:after {
         content: '';
@@ -2258,6 +2263,74 @@ body {
 .estate-list-li03 .estate-list-text p.bname {
   background: #D9A300 url("../img/estate-list-blank.svg") no-repeat 95% center;
   background-size: 14px 11px; }
+
+#top-feature-wrap {
+  border-top: solid 1px #fff;
+  position: relative;
+  padding: 40px 0; }
+  #top-feature-wrap:before {
+    content: '';
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: -41px;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(137, 129, 117, 0) 0%, rgba(137, 129, 117, 0) 1%, rgba(137, 129, 117, 0.2) 100%); }
+
+
+
+#top-feature-list {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap; }
+  #top-feature-list li {
+	  counter-increment: section;
+    width: 32.5%;
+    max-width: 32.5%;
+    flex: 0 0 32.5%;
+    background: #fff;
+    margin-right: 1.25%;
+    margin-bottom: 24px;
+    padding: 16px;
+position: relative;}
+    #top-feature-list li:nth-child(3n) {
+      margin-right: 0; }
+    #top-feature-list li .imgbox{
+		margin-bottom: 20px;
+		width: 100%;
+		height: 100px;
+		overflow: hidden;}
+
+#top-feature-list li .text:before{
+	content: counter(section, decimal-leading-zero);
+	position: absolute;
+	display: block;
+	top:0;
+	left: 0;
+
+	font-size: 24px;
+	color: #fff;
+	background: #04B4DF;
+	padding: 5px;
+	
+}
+#top-feature-list li .text{
+	font-size: 14px;
+}
+
+      #top-feature-list li .right h2, #top-feature-list li .ir h2, #top-feature-list li .right h3, #top-feature-list li .ir h3, #top-feature-list li .right p, #top-feature-list li .ir p,#top-feature-list p.text {
+        font-weight: 700;
+        margin-bottom: 8px; }
+      #top-feature-list li .right p a, #top-feature-list li .ir p a {
+        color: #262515; }
+    @media screen and (max-width: 680px) {
+      #top-feature-list li {
+        width: 96%;
+        max-width: 96%;
+        flex: 0 0 96%;
+        margin: 0 2% 8px 2%; } }
+    .no-flexbox #top-feature-list li {
+      float: left; }
 
 #top-topics-wrap {
   border-top: solid 1px #fff;
@@ -2400,7 +2473,7 @@ body {
     font-size: 1.8rem;
     font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho","serif";
     font-weight: 700;
-   }
+	 }
     @media screen and (max-width: 680px) {
       #title-wrap div span.ja {
         font-size: 16px;
@@ -2638,7 +2711,7 @@ body {
           cursor: pointer;
           transition: all 0.6s;
           text-decoration: none;
-      white-space:nowrap;}
+		  white-space:nowrap;}
           .table-people-num td .table-form-wrap .right .to-reservation a:hover, .table-people-num td .table-form-wrap .ir .to-reservation a:hover {
             background-color: #E45454; }
     .table-people-num td.table-people-td {
@@ -2836,9 +2909,9 @@ body {
     display: inline; }
   .charge-03 dl dt {
     font-weight: bold; }
-  
+	
 #table-people-wrap {
-  padding-bottom:70px;
+	padding-bottom:70px;
 }
 
 /* END:each Page Style
@@ -3192,11 +3265,10 @@ display: block;
 
 
 .wcedit_400179691001 .swiper-container.gallery-top{
-  width:376px;
-  height:400px;
-  overflow:auto;
+	width:376px;
+	height:400px;
+	overflow:auto;
 }
-
 
 /*201809 workcapital 追加
 **/
@@ -3318,9 +3390,6 @@ display: block;
     display: none !important;
   }
 }
-
-
-
 
 /* END:WC Other Style
  * =================================================================================

@@ -134,7 +134,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->From 'form_akihabara@weeklycenter.co.jp';     
+                            $mailer->From='form_akihabara@weeklycenter.co.jp';     
                             $mailer->FromName = "Weekly Center";  
                             $mailer->Subject = "お問合せ_秋葉原 Part1"; 
                             $mailer->Body = 

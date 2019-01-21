@@ -781,7 +781,7 @@ $inums: 100%, 47%, 29.335%, 23.5%, 18.4%;
         margin: 0;
         font-weight: 700;
         a{
-            display: inline;
+            display: inline-block;
             padding: $b-nump1 20px $b-nump1 $b-nump1;
             text-align: center;
             color: $base-font-color;
