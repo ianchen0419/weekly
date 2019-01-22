@@ -122,6 +122,14 @@
                             $people_number = htmlspecialchars($_POST['people_number']);
                             $room_type = htmlspecialchars($_POST['room_type']);
                             $stay_plan = htmlspecialchars($_POST['plan']);
+                            $stay_plan_admin='';
+                            if($stay_plan=='短期（7〜29晚）'){
+                                $stay_plan_admin='ショート(7～29泊)';
+                            }else if($stay_plan=='中期（30〜89晚）'){
+                                $stay_plan_admin='ミドル(30～89泊)';
+                            }else if($stay_plan=='长期（90晚〜）'){
+                                $stay_plan_admin='ロング(90泊～)';
+                            }
                             $date_from = htmlspecialchars($_POST['jquery-ui-datepicker-from']);
                             $date_to = htmlspecialchars($_POST['jquery-ui-datepicker-to']);
                             $people_type = htmlspecialchars($_POST['mailform7']);
@@ -156,7 +164,7 @@
                                 '■建物名'."<br>".$resident_name."<br><br>".
                                 '■利用人数'."<br>".$people_number."<br><br>".
                                 '■部屋タイプ'."<br>".$room_type."<br><br>".
-                                '■プラン'."<br>".$stay_plan."<br><br>".
+                                '■プラン'."<br>".$stay_plan_admin."<br><br>".
                                 '■利用予定期間:in'."<br>".$date_from."<br><br>".
                                 '■利用予定期間:out'."<br>".$date_to."<br><br>".
                                 '■お申し込み種別'."<br>".$people_type."<br><br>".

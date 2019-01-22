@@ -157,7 +157,7 @@
                                 '■建物名'."<br>".$resident_name."<br><br>".
                                 '■利用人数'."<br>".$people_number."<br><br>".
                                 '■部屋タイプ'."<br>".$room_type."<br><br>".
-                                '■プラン'."<br>".$stay_plan."<br><br>".
+                                '■プラン'."<br>".$stay_plan_admin."<br><br>".
                                 '■利用予定期間:in'."<br>".$date_from."<br><br>".
                                 '■利用予定期間:out'."<br>".$date_to."<br><br>".
                                 '■お申し込み種別'."<br>".$people_type."<br><br>".
