@@ -140,8 +140,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->From='form_saitama@weeklycenter.co.jp';     
-                            $mailer->FromName = "Weekly Center";  
+                            $mailer->SetFrom($people_email, $people_name);  
                             $mailer->Subject = "お問合せ_埼玉"; 
                             $mailer->Body = 
                                 '■お名前'."<br>".$people_name."<br><br>".

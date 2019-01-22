@@ -151,8 +151,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->From='form_ikebukuro@weeklycenter.co.jp';     
-                            $mailer->FromName = "Weekly Center";  
+                            $mailer->SetFrom($people_email, $people_name);  
                             $mailer->Subject = "ご予約_池袋"; 
                             $mailer->Body = 
                                 '■建物名'."<br>".$resident_name."<br><br>".
