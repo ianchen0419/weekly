@@ -13,7 +13,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>Weekly Center</title>
+    <title>Toiawase</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- WCRDS --><!-- WCRDE -->

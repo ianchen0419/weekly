@@ -14,7 +14,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>Weekly Center</title>
+    <title>Yoyaku</title>
     <meta content="IE=edge" htt
 
     p-equiv="X-UA-Compatible">
