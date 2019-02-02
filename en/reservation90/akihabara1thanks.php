@@ -14,7 +14,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>Yoyaku</title>
+    <title>Weekly Center</title>
     <meta content="IE=edge" htt
 
     p-equiv="X-UA-Compatible">
@@ -162,7 +162,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->SetFrom($people_email, $people_name);  
+                            $mailer->SetFrom($people_email, 'Yoyaku'); 
                             $mailer->Subject = "ご予約_秋葉原 Part1"; 
                             $mailer->Body = 
                                 '■建物名'."<br>".$resident_name."<br><br>".

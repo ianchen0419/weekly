@@ -13,7 +13,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>Toiawase</title>
+    <title>Weekly Center</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- WCRDS --><!-- WCRDE -->
@@ -139,7 +139,7 @@
                             $mailer->SMTPDebug  = 1;
                             $mailer->Encoding = "base64";
                             $mailer->IsHTML(true); 
-                            $mailer->SetFrom($people_email, $people_name);  
+                            $mailer->SetFrom($people_email, 'Toiawase');  
                             $mailer->Subject = "お問合せ_秋葉原 Part2"; 
                             $mailer->Body = 
                                 '■お名前'."<br>".$people_name."<br><br>".
