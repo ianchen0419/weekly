@@ -155,7 +155,7 @@
                                 $subject_user = 'Thank you for your inquiry.: weeklycenter Akihabara Part2'; 
                                 $headers_user = "From: form_akihabara@weeklycenter.co.jp";
                                 $content_user = 
-                                    'Dear '.$people_name."\n".
+                                    'Dear '.$people_name."\n\n".
                                     'Thank you for your inquiry.'."\n".
                                     '----------------------------------------------------------'."\n\n\n".
                                     '■Name'."\n".$people_name."\n\n".
@@ -169,7 +169,6 @@
                                     '604, 2 Kandakitanorimonocho, Chiyoda-ku, Tokyo, 101-0036, JAPAN'."\n\n".
                                     '■Tokyo Reservation Center TEL.03-5950-1111'."\n".
                                     '■Akihabara direct line TEL.03-5820-0111'."\n".
-                                    '■Ochanomizu Sales Office TEL.03-5807-6980'."\n".
                                     '■Saitama Reservation Center TEL.048-651-1111'."\n".
                                     '================================='."\n\n";
 

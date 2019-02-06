@@ -182,8 +182,12 @@
                                 $subject_user = 'Thank you for your inquiry.:weeklycenter Saitama'; 
                                 $headers_user = "From: form_saitama@weeklycenter.co.jp";
                                 $content_user = 
-                                    'Dear '.$people_name."\n".
-                                    'Thank you for your inquiry.'."\n".
+                                    'Dear '.$people_name."\n\n".
+                                    'Thank you for your booking request.'."\n".
+                                    'We\'ll inform you after confirming the availability.'."\n\n".
+                                    '*Booking hasn\'t been done yet.'."\n".
+                                    'We will send you the booking confirmation email separately.'."\n".
+                                    'If you don\'t receive emails from us in 2 business days, please contact us.'."\n".
                                     '----------------------------------------------------------'."\n\n\n".
                                     '■Apartment name'."\n".$resident_name."\n\n".
                                     '■Number of people'."\n".$people_number."\n\n".
@@ -204,7 +208,6 @@
                                     '604, 2 Kandakitanorimonocho, Chiyoda-ku, Tokyo, 101-0036, JAPAN'."\n\n".
                                     '■Tokyo Reservation Center TEL.03-5950-1111'."\n".
                                     '■Akihabara direct line TEL.03-5820-0111'."\n".
-                                    '■Ochanomizu Sales Office TEL.03-5807-6980'."\n".
                                     '■Saitama Reservation Center TEL.048-651-1111'."\n".
                                     '================================='."\n\n";
 
