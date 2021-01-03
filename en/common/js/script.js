@@ -761,7 +761,7 @@ window.onload = function () {
                     prevEl: '.swiper-button-prev',
                 },
                 autoplay: {
-                    delay: 3000,
+                    delay: 6000,
                 }
             });
         }
