@@ -10,7 +10,7 @@
   "devDependencies": {
     "@types/js-cookie": "^2.1.0",
     "browser-sync": "^2.18.13",
-    "gsap": "^1.20.2",
+    "gsap": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
